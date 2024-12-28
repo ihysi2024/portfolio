@@ -1,0 +1,220 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+.App {
+  text-align: center;
+  background-color: #283353;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #283353;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: flex-start; /* Align items to the left */
+  /* padding: 60px; /* Add padding to the container */
+  gap: 60px; 
+  flex-direction: row;
+  position: absolute;
+  z-index: 1;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: column; /* Stack the tabs vertically */
+  align-items: center; /* Center the tabs horizontally */
+  position: relative; /* Keep relative positioning */
+  z-index: 2; /* Ensure above other elements */
+}
+
+.ira {
+  font-size: 60px;
+  color: white;
+  font-family: 'Be Vietnam Pro', 'Thin 100';
+  font-weight: 400;
+  margin-top: 100px
+}
+
+.description {
+  font-size: 20px;
+  color: white;
+  font-family: 'Be Vietnam Pro', 'Thin 100';
+  font-weight: 200;
+  max-width: 400px;
+  margin-top: -50px;
+}
+
+.profile {
+  border-radius: 50%;
+  scale: 0.5; /* Adjust the scaling as needed */
+  z-index: -1; /* Push it behind all clickable elements */
+  position: relative; /* Ensure z-index applies */
+  pointer-events: none; /* Make the image non-interactive */
+}
+
+.rectangle {
+  width: 75%; /* Adjust to desired width */
+  height: 65%; /* Adjust to desired height */
+  background-color: #6B748E;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  z-index: 1;
+}
+
+.about-container {
+  position: absolute;
+  bottom: 60px; /* Same as the rectangle */
+  right: 60px; /* Same as the rectangle */
+  width: 75%; /* Match rectangle width */
+  height: 65%; /* Match rectangle height */
+  z-index: 2; /* Render above the rectangle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+.big-tab {
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
+  font-family: 'Be Vietnam Pro', 'Thin 100';
+  cursor: pointer; /* Adds the hand pointer for clickability */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  position: relative; /* Ensure z-index applies */
+  z-index: 2; /* Ensure tabs are on top of other elements */
+}
+
+
+
+.big-tab:hover {
+  color: #90E5E2; /* Changes the font color on hover */
+}
+
+.lil-tab {
+  font-weight: 100;
+  font-size: 20px;
+  color: white;
+  font-family: 'Be Vietnam Pro', 'Thin 100';
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.extra-light {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 200;
+}
+
+.extra-light-italic {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.About {
+  position: absolute;
+  top: 10px; /* Adjust to position the About content as desired */
+  left: 0;
+  width: 100%;
+  z-index: 2; /* Make sure it renders above the rectangle */
+  color: white;
+}
+
+.About h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.big-tab {
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.bottom-left-button {
+  font-family: 'Be Vietnam Pro', sans-serif; /* Use the specified font */
+  font-weight: 400; /* Font weight */
+  font-size: 24px; /* Font size */
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text */
+  border: 2px solid white; /* White border */
+  border-radius: 30px; /* Rounded corners */
+  width: 150px; /* Fixed width */
+  padding: 10px 20px; /* Add padding for better spacing */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  text-align: center; /* Center-align the text */
+  margin-top: 500px;
+}
+
+.bottom-left-button:hover {
+  background-color: white; /* White background on hover */
+  color: #283353; /* Change text color to match the app's background */
+}
+
+
+.subtabs-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.subtab {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.subtab:hover::before {
+  content: '➤  '; /* Arrow symbol */
+  left: 20px; /* Adjust based on desired arrow position */
+  top: 50%; /* Center the arrow vertically */
+  transform: translateY(-50%); /* Perfect vertical centering */
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s;
+  padding-left: 50
+  
+}
+
+
+
+.subtab:hover {
+  font-style: italic; /* Make the font italic on hover */
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

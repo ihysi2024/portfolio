@@ -1,0 +1,98 @@
+.projects-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .screenshot-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    width: 90%; /* Adjust container width */
+    max-width: 800px; /* Limit max width */
+    position: relative; /* For precise positioning */
+  }
+  
+  .screenshot {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: center;
+    opacity: 0; /* Initially invisible */
+    animation: fadeInUp 0.8s ease-out forwards; /* Animation for fading and sliding up */
+  }
+  
+  /* Add delay for each screenshot to stagger the animation */
+  .nightlife {
+    animation-delay: 0.2s;
+  }
+  .employai {
+    animation-delay: 0.4s;
+  }
+  .pantry {
+    animation-delay: 0.6s;
+  }
+  .gnn {
+    animation-delay: 0.8s;
+  }
+  .taskmaster {
+    animation-delay: 1s;
+  }
+  
+  /* Fade-in and slide-up animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      
+    }
+    100% {
+      opacity: 1;
+      
+    }
+  }
+  
+  /* Hover enlarge effect */
+  .screenshot.lift {
+    box-shadow: 0px 0px 50px rgba(0, 255, 255, 0.6); /* Glowing outline */
+    border-color: rgba(0, 255, 255, 0.6); /* Optional: change border color to match the glow */
+    z-index: 1; /* Bring the hovered element to the front */
+  }
+  
+  /* Screenshots specific styles */
+  .nightlife {
+    width: 160%;
+    transform: translate(-75%, 40%); /* Move down and left */
+    position: relative;
+  }
+  
+  .taskmaster {
+    width: 150%;
+    transform: translate(265%, -70%); /* Move up and to the right */
+    position: relative;
+  }
+  
+  .employai {
+    width: 355%;
+    transform: translate(-19%, 72%); /* Move down and left */
+    position: relative;
+  }
+  
+  .pantry {
+    width: 160%;
+    transform: translate(-89%, 350%); /* Positioned under EmployAI */
+    position: relative;
+    scale: 1.15;
+  }
+  
+  .gnn {
+    width: 150%;
+    transform: translate(-55%, 350%); /* Positioned under EmployAI, side by side with Pantry */
+    position: relative;
+    scale: 1.1;
+  }
+  
