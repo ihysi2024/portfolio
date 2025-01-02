@@ -1,16 +1,44 @@
 .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #000;
+  width: 100%;
+  max-width: 800px; /* Optional: limit the maximum width for large screens */
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  max-width: 100%;  /* Ensures the video doesn't stretch beyond the container */
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .video-container {
+    width: 100%;
+    max-width: none;
+    padding: 10px;
   }
-  
+
   .video-player {
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
   }
-  
+
+  .about-container {
+    font-size: 16px;  /* Smaller font for mobile */
+    padding: 10px;
+  }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-container {
+    font-size: 18px;  /* Adjust font size for tablet */
+  }
+}
