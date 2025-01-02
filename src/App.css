@@ -218,3 +218,11 @@
     transform: rotate(360deg);
   }
 }
+
+.resume-container iframe {
+  border: none;
+}
+
+body {
+  overflow: hidden; /* Disable scrollbars */
+}

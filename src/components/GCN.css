@@ -1,0 +1,176 @@
+.gcn-n {
+    position: relative;
+    top: 100px;
+    left: -500px;
+  }
+  
+  .gcn-recording {
+    border-radius: 10px; /* Optional: Add rounded corners */
+    width: 400px;
+    position: relative; /* Ensure it's positioned relative to allow left adjustment */
+    left: -250px; /* Move the video to the left */
+    top: 300px;
+    border: 10px solid #283353;
+      
+  }
+  
+  .gcn-title {
+    font-size: 48px;
+    font-family: 'Be Vietnam Pro'; /* Use the specified font */
+    font-weight: 400; /* Lighter font weight */
+    color: rgba(0, 255, 255, 0.6); /* Adjust color */
+    position: relative; /* Use relative positioning */
+    top: -550px; /* Adjust positioning */
+    left: 75px; /* Adjust positioning */
+    margin-bottom: -40px; /* Add "px" to avoid potential issues */
+   }
+  
+  .gcn-title-separator {
+    width: 700px;
+    height: 1px;
+    background-color: #ffffff; /* White line */
+    border-radius: 1px;
+    font-family: 'Be Vietnam Pro', sans-serif; /* Use the specified font */
+    font-weight: 200; /* Font weight */
+    position: relative; /* Use relative positioning */
+    top: -500px; /* Adjust positioning */
+    left: 230px; /* Adjust positioning */
+  }
+  
+  .gcn-desc {
+    font-size: 20px; /* Adjust as needed */
+    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
+    font-weight: 300; /* Lighter font weight */
+    color: #ffffff; /* Adjust color */
+    margin-top: 20px; /* Add spacing from the separator */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Adjust positioning */
+    top: -500px; /* Ensure it's positioned relative to the separator */
+    left: 230px; /* Adjust alignment */
+    width: 700px;
+  }
+  
+  .gcn-backend-title {
+    font-size: 30px; /* Adjust as needed */
+    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
+    font-weight: 400; /* Lighter font weight */
+    color: rgba(0, 255, 255, 0.6); /* Adjust color */
+    margin-top: 20px; /* Add spacing from the separator */
+    text-align: center; /* Center-align the text */
+    position: relative; /* Adjust positioning */
+    top: -500px; /* Ensure it's positioned relative to the separator */
+    left: 230px; /* Adjust alignment */
+    text-align: left;
+  }
+  
+  .gcn-tech-stack {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  
+  .gcn-backend-item {
+    font-size: 20px; /* Adjust as needed */
+    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
+    font-weight: 300; /* Lighter font weight */
+    color: #ffffff; /* Adjust color */
+    margin-top: 20px; /* Add spacing from the separator */
+    position: relative; /* Adjust positioning */
+    top: -600px; /* Ensure it's positioned relative to the separator */
+    left: 230px; /* Adjust alignment */
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid white;
+    border-radius: 50px;
+  }
+  
+  .gcn-frontend-title {
+    font-size: 30px; /* Adjust as needed */
+    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
+    font-weight: 400; /* Lighter font weight */
+    color: rgba(0, 255, 255, 0.6); /* Adjust color */
+    margin-top: 20px; /* Add spacing from the separator */
+    text-align: center; /* Center-align the text */
+    position: relative; /* Adjust positioning */
+    top: -550px; /* Ensure it's positioned relative to the separator */
+    left: 230px; /* Adjust alignment */
+    text-align: left;
+  }
+  
+  
+  
+  .gcn-frontend-item {
+    font-size: 20px; /* Adjust as needed */
+    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
+    font-weight: 300; /* Lighter font weight */
+    color: #ffffff; /* Adjust color */
+    margin-top: -30px; /* Add spacing from the separator */
+    position: relative; /* Adjust positioning */
+    top: -500px; /* Ensure it's positioned relative to the separator */
+    left: 230px; /* Adjust alignment */
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid white;
+    border-radius: 50px;
+  }
+  
+  .gcn-tool-title {
+    font-size: 30px; /* Adjust as needed */
+    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
+    font-weight: 400; /* Lighter font weight */
+    color: rgba(0, 255, 255, 0.6); /* Adjust color */
+    margin-top: 20px; /* Add spacing from the separator */
+    text-align: center; /* Center-align the text */
+    position: relative; /* Adjust positioning */
+    top: -440px; /* Ensure it's positioned relative to the separator */
+    left: 230px; /* Adjust alignment */
+    text-align: left;
+  }
+  
+  .gcn-tool-item {
+    font-size: 15px; /* Adjust as needed */
+    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
+    font-weight: 300; /* Lighter font weight */
+    color: #ffffff; /* Adjust color */
+    margin-top: -30px; /* Add spacing from the separator */
+    position: relative; /* Adjust positioning */
+    top: -460px; /* Ensure it's positioned relative to the separator */
+    left: 230px; /* Adjust alignment */
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid white;
+    border-radius: 50px;
+  }
+  
+  .gcn-backend-item:hover, 
+  .gcn-frontend-item:hover, 
+  .gcn-tool-item:hover {
+    color: rgba(0, 255, 255, 0.6); /* Change background color on hover */
+    border: 2px solid rgba(0, 255, 255, 0.6);
+    transition: color 0.3s ease; /* Smooth transition */
+  }
+  
+  .gcn-bullet-list {
+    font-size: 20px; /* Adjust as needed */
+    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
+    font-weight: 300; /* Lighter font weight */
+    color: #ffffff; /* Adjust color */
+    margin-top: 20px; /* Add spacing from the separator */
+    text-align: left; /* Center-align the text */
+    position: relative; /* Adjust positioning */
+    top: -500px; /* Ensure it's positioned relative to the separator */
+    left: 230px; /* Adjust alignment */
+    width: 700px;
+    list-style: disc;
+
+  }
+  

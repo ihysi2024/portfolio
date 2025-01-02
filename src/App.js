@@ -4,6 +4,15 @@ import { useState } from 'react';
 import About from './components/About';
 import Projects from './components/Projects';
 import Nightlife from './components/Nightlife';
+import TaskMaster from './components/Taskmaster';
+import EmployAI from './components/Employai';
+import Pantry from './components/Pantry';
+import GCN from './components/GCN';
+import Contact from './components/Contact';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Corrected imports
+import Resume from './components/Resume'; // Ensure this import is correct
+
+
 
 function App() {
   const [tab, setTab] = useState("about");
@@ -32,6 +41,7 @@ function App() {
 
 
   return (
+    <Router>
     <div className="App">
       <header className={`App-header ${isSubtabActive ? "header-collapsed" : ""}`}>
         <div style={{ flexDirection: "column", marginTop: -55 }}>
@@ -121,9 +131,29 @@ function App() {
         {!isSubtabActive && 
         
         <div style={{ marginTop: 40 }}>
-          <i className="fab fa-github" style={{ fontSize: '80px', color: 'white', padding: 50 }}></i>
-          <i className="fab fa-linkedin" style={{ fontSize: '80px', color: 'white', padding: 50 }}></i>
-          <i className="fas fa-file-alt" style={{ fontSize: '80px', color: 'white', padding: 50 }}></i>
+          <a 
+            href="https://github.com/ihysi2024" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <i 
+              className="fab fa-github" 
+              style={{ fontSize: '80px', color: 'white', padding: 50 }}
+            ></i>
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/ira-hysi-93a0261b0/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <i 
+              className="fab fa-linkedin" 
+              style={{ fontSize: '80px', color: 'white', padding: 50 }}
+            ></i>
+          </a>
+          <Link to="/Hysi_Resume_Jan2025.pdf" target="_blank" rel="noopener noreferrer">
+            <i className="fas fa-file-alt" style={{ fontSize: '80px', color: 'white', padding: 50 }}></i>
+          </Link>
         </div> 
         }
       </header>
@@ -154,8 +184,33 @@ function App() {
           <div className="about-container">
           <Nightlife/>
         </div>}
+
+        {tab == "taskmaster" && 
+          <div className="about-container">
+          <TaskMaster/>
+        </div>}
+
+        {tab == "employai" && 
+          <div className="about-container">
+          <EmployAI/>
+        </div>}
+
+        {tab == "pantry" && 
+          <div className="about-container">
+          <Pantry/>
+        </div>}
+
+        {tab == "gnn" && 
+          <div className="about-container">
+          <GCN />
+        </div>}
     
+        {tab == "contact" && 
+          <div className="about-container">
+          <Contact />
+        </div>}
     </div>
+    </Router>
   );
 }
 
