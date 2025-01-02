@@ -226,3 +226,15 @@
 body {
   overflow: hidden; /* Disable scrollbars */
 }
+
+@media screen and (max-width: 768px) {
+  /* Styles for mobile devices */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for tablet devices */
+}
+
+@media screen and (min-width: 1025px) {
+  /* Styles for desktop devices */
+}
