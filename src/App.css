@@ -40,7 +40,7 @@
 }
 
 .ira {
-  font-size: 60px;
+  font-size: 4rem;
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 400;
@@ -48,7 +48,7 @@
 }
 
 .description {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 200;
@@ -77,15 +77,16 @@
 
 .about-container {
   position: absolute;
-  bottom: 60px; /* Same as the rectangle */
-  right: 60px; /* Same as the rectangle */
-  width: 75%; /* Match rectangle width */
-  height: 65%; /* Match rectangle height */
-  z-index: 2; /* Render above the rectangle */
+  bottom: 60px;
+  right: 60px;
+  width: 75%;
+  height: 65%;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 
