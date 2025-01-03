@@ -44,7 +44,7 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <h2 style={{fontSize : 30}}>Have a question or just want to chat? Send me a message!</h2>
+      <h2 style={{fontSize : '2vw'}}>Have a question or just want to chat? Send me a message!</h2>
       {success && <p className="success-message">Message sent successfully!</p>}
       {error && <p className="error-message">Failed to send the message. Try again.</p>}
       <form className="contact-form" onSubmit={handleSubmit}>

@@ -1,8 +1,8 @@
 .contact-container {
-    width: 1400px;
-    height: 600px;
+    width: 80vw;
+    height: 65vh;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5vw;
     background-color: transparent;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -10,16 +10,16 @@
   
   .contact-container h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
     color: white;
     font-family: 'Be Vietnam Pro'; /* Use the specified font */
     font-weight: 400;
   }
   
   .contact-container .success-message {
-    color: #61dafb;
+    color: #90E5E2;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 1vh;
     font-family: 'Be Vietnam Pro'; /* Use the specified font */
     font-weight: 400;
   }
@@ -27,47 +27,47 @@
   .contact-container .error-message {
     color: red;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 1vh;
     font-family: 'Be Vietnam Pro'; /* Use the specified font */
     font-weight: 400;
   }
   
   .contact-form label {
     display: block;
-    margin-top: 10px;
+    margin-top: 1vh;
     font-weight: bold;
     color: white;
     font-family: 'Be Vietnam Pro'; /* Use the specified font */
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.2vw;
   }
 
   
   .contact-form input,
   .contact-form textarea {
-    width: 800px;
-    padding: 10px;
-    margin-top: 10px;
+    width: 46vw;
+    padding: 0.5vw;
+    margin-top: 1vh;
     border: 1px solid #ccc;
     border-radius: 20px;
     font-family: 'Be Vietnam Pro'; /* Use the specified font */
     font-weight: 400;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 1.2vw;
+    margin-bottom: 2vh;
   }
   
   .contact-form button {
-    width: 800px;
-    padding: 10px;
-    margin-top: 30px;
-    background-color: #61dafb;;
+    width: 48vw;
+    padding: 0.5vw;
+    margin-top: 1vh;
+    background-color: #90E5E2;
     color: white;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Be Vietnam Pro'; /* Use the specified font */
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.2vw;
 
   }
   

@@ -6,59 +6,58 @@
   .employai-recording {
     border-radius: 10px; /* Optional: Add rounded corners */
     position: relative; /* Ensure it's positioned relative to allow left adjustment */
-    left: 10px; /* Move the video to the left */
-    top: 40px;
+    left: 0.5vw; /* Move the video to the left */
+    top: 5vh;
     border: 10px solid #283353;
     
   }
   
   .employai-title {
-    font-size: 48px;
+    font-size: 3vw;
     font-family: 'Be Vietnam Pro'; /* Use the specified font */
     font-weight: 400; /* Lighter font weight */
     color: rgba(0, 255, 255, 0.6); /* Adjust color */
     position: relative; /* Use relative positioning */
-    top: -510px; /* Adjust positioning */
-    left: 10px; /* Adjust positioning */
-    margin-bottom: -40px; /* Add "px" to avoid potential issues */
+    top: -52vh; /* Adjust positioning */
+    margin-bottom: -4vh; /* Add "px" to avoid potential issues */
   
   }
   
   .employai-title-separator {
-    width: 900px;
+    width: 60vw;
     height: 1px;
     background-color: #ffffff; /* White line */
     border-radius: 1px;
     font-family: 'Be Vietnam Pro', sans-serif; /* Use the specified font */
     font-weight: 200; /* Font weight */
     position: relative; /* Use relative positioning */
-    top: -460px; /* Adjust positioning */
-    left: 10px; /* Adjust positioning */
+    top: -47vh; /* Adjust positioning */
+    left: 1vw; /* Adjust positioning */
   }
   
   .employai-desc {
-    font-size: 20px; /* Adjust as needed */
+    font-size: 1.1vw; /* Adjust as needed */
     font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
     font-weight: 300; /* Lighter font weight */
     color: #ffffff; /* Adjust color */
-    margin-top: 20px; /* Add spacing from the separator */
+    margin-top: 2vh; /* Add spacing from the separator */
     text-align: left; /* Center-align the text */
     position: relative; /* Adjust positioning */
-    top: 20px; /* Ensure it's positioned relative to the separator */
-    left: -50px; /* Adjust alignment */
-    width: 350px;
+    top: 1vh; /* Ensure it's positioned relative to the separator */
+    left: -2vw; /* Adjust alignment */
+    width: 19vw;
   }
   
   .employai-backend-title {
-    font-size: 30px; /* Adjust as needed */
+    font-size: 1.8vw; /* Adjust as needed */
     font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
     font-weight: 400; /* Lighter font weight */
     color: rgba(0, 255, 255, 0.6); /* Adjust color */
-    margin-top: 20px; /* Add spacing from the separator */
+    margin-top: 2vh; /* Add spacing from the separator */
     text-align: center; /* Center-align the text */
     position: relative; /* Adjust positioning */
-    top: -280px; /* Ensure it's positioned relative to the separator */
-    left:350px; /* Adjust alignment */
+    top: -29vh; /* Ensure it's positioned relative to the separator */
+    left: 20.5vw; /* Adjust alignment */
     text-align: left;
   }
   

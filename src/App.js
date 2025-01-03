@@ -49,7 +49,7 @@ function App() {
           <img src={iraImage} className="profile" />
           }
           {/* Tabs Container */}
-          <div style={{ zIndex: 2, marginTop: isSubtabActive ? '6.67vh' : '-10.56vh', padding: '10px', borderRadius: '5px', marginLeft: '1vw' }}>
+          <div style={{ zIndex: 2, marginTop: isSubtabActive ? '-7vh' : '-10.56vh', padding: '1vh', borderRadius: '5px', marginLeft: '1vw' }}>
             {!isSubtabActive && 
             <div>
             <p className="big-tab" onClick={() => handleTabClick('about')}>About</p>
@@ -95,7 +95,7 @@ function App() {
                 </p>
                 <p
                   className="subtab"
-                  style={{width: 350, textAlign: 'center'}}
+                  style={{width: '20vw', textAlign: 'center'}}
                   onMouseEnter={() => handleSubtabHover("gnn")}
                   onMouseLeave={() => handleSubtabHover("")}
                   onClick={() => handleSubtabClick("gnn")}
@@ -130,7 +130,7 @@ function App() {
 
         {!isSubtabActive && 
         
-        <div style={{ marginTop: 40 }}>
+        <div style={{ marginTop: '5vh' }}>
           <a 
             href="https://github.com/ihysi2024" 
             target="_blank" 
@@ -138,7 +138,7 @@ function App() {
           >
             <i 
               className="fab fa-github" 
-              style={{ fontSize: '80px', color: 'white', padding: 50 }}
+              style={{ fontSize: '4vw', color: 'white', padding: '4vw' }}
             ></i>
           </a>
           <a 
@@ -148,11 +148,11 @@ function App() {
           >
             <i 
               className="fab fa-linkedin" 
-              style={{ fontSize: '80px', color: 'white', padding: 50 }}
+              style={{ fontSize: '4vw', color: 'white', padding: '4vw' }}
             ></i>
           </a>
           <Link to="/Hysi_Resume_Jan2025.pdf" target="_blank" rel="noopener noreferrer">
-            <i className="fas fa-file-alt" style={{ fontSize: '80px', color: 'white', padding: 50 }}></i>
+            <i className="fas fa-file-alt" style={{ fontSize: '4vw', color: 'white', padding: '4vw' }}></i>
           </Link>
         </div> 
         }
@@ -162,7 +162,7 @@ function App() {
       <div 
       className="rectangle" 
       style={{
-          height: isSubtabActive ? '90%' : '65%', // Adjust height based on subtab state
+          height: isSubtabActive ? '90vh' : '65vh', // Adjust height based on subtab state
           transition: 'height 0.5s ease',
         }}>
       </div>

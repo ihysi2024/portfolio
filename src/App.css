@@ -47,7 +47,7 @@
 }
 
 .description {
-  font-size: 20px;
+  font-size: 1.2vw;
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 200;
@@ -65,22 +65,22 @@
 }
 
 .rectangle {
-  width: 75%; /* Adjust to desired width */
-  height: 65%; /* Adjust to desired height */
+  width: 75vw; /* Adjust to desired width */
+  height: 65vh; /* Adjust to desired height */
   background-color: #6B748E;
   border-radius: 10px;
   position: absolute;
-  bottom: 60px;
-  right: 60px;
+  bottom: 4vw;
+  right: 6vh;
   z-index: 1;
 }
 
 .about-container {
   position: absolute;
-  bottom: 60px; /* Same as the rectangle */
-  right: 60px; /* Same as the rectangle */
-  width: 75%; /* Match rectangle width */
-  height: 65%; /* Match rectangle height */
+  bottom: 4vw;
+  right: 6vh;
+  width: 75vw; /* Adjust to desired width */
+  height: 65vh; /* Adjust to desired height */
   z-index: 2; /* Render above the rectangle */
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@
 
 .big-tab {
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2vw;
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   cursor: pointer; /* Adds the hand pointer for clickability */
@@ -108,7 +108,7 @@
 
 .lil-tab {
   font-weight: 100;
-  font-size: 20px;
+  font-size: 1vw;
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
 }
@@ -128,44 +128,20 @@
   font-style: italic;
 }
 
-.About {
-  position: absolute;
-  top: 10px; /* Adjust to position the About content as desired */
-  left: 0;
-  width: 100%;
-  z-index: 2; /* Make sure it renders above the rectangle */
-  color: white;
-}
-
-.About h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.big-tab {
-  font-size: 36px;
-  color: white;
-  cursor: pointer;
-  margin: 10px 0;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
 .bottom-left-button {
   font-family: 'Be Vietnam Pro', sans-serif; /* Use the specified font */
   font-weight: 400; /* Font weight */
-  font-size: 24px; /* Font size */
+  font-size: 1.5vw; /* Font size */
   background-color: transparent; /* Transparent background */
   color: white; /* White text */
   border: 2px solid white; /* White border */
   border-radius: 30px; /* Rounded corners */
-  width: 150px; /* Fixed width */
-  padding: 10px 20px; /* Add padding for better spacing */
+  width: 10vw; /* Fixed width */
+  padding: 1vh 2vh; /* Add padding for better spacing */
   cursor: pointer; /* Pointer cursor on hover */
   transition: all 0.3s ease; /* Smooth hover effect */
   text-align: center; /* Center-align the text */
-  margin-top: 500px;
+  margin-top: 52vh;
 }
 
 .bottom-left-button:hover {
@@ -178,13 +154,14 @@
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  padding: 10px;
-  max-width: 20vw;
+  padding: 1vw;
+  max-width: 19vw;
   align-items: center;
+  margin-top: -3vh;
 }
 
 .subtab {
-  font-size: 24px;
+  font-size: 1.4vw;
   color: white;
   cursor: pointer;
   margin: 5px 0;
@@ -195,13 +172,12 @@
 
 .subtab:hover::before {
   content: '➤  '; /* Arrow symbol */
-  left: 20px; /* Adjust based on desired arrow position */
+  left: 1vw; /* Adjust based on desired arrow position */
   top: 50%; /* Center the arrow vertically */
   transform: translateY(-50%); /* Perfect vertical centering */
   color: white;
-  font-size: 24px;
+  font-size: 1.3vw;
   transition: color 0.3s;
-  padding-left: 50
   
 }
 
