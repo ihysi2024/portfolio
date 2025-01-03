@@ -44,7 +44,6 @@
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 400;
   margin-top: 8vh;
-  margin-left: -3vw;
 }
 
 .description {
@@ -54,15 +53,15 @@
   font-weight: 200;
   max-width: 20vw;
   margin-top: -1vh;
-  margin-left: -3vw;
 }
 
 .profile {
   border-radius: 50%;
-  scale: 50%; /* Adjust the scaling as needed */
+  width: 50%; /* Adjust the scaling as needed */
   z-index: -1; /* Push it behind all clickable elements */
   position: relative; /* Ensure z-index applies */
   pointer-events: none; /* Make the image non-interactive */
+  margin-bottom: 10vh;
 }
 
 .rectangle {
