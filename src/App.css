@@ -426,4 +426,432 @@ body {
   .subtab {
     font-size: 24px;
   }
+}@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.App {
+  text-align: center;
+  background-color: #283353;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #283353;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5%;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.ira {
+  font-size: 2.5rem;  /* Slightly larger text for readability */
+  color: white;
+  font-family: 'Be Vietnam Pro', 'Thin 100';
+  font-weight: 400;
+  margin-top: 12%;
+  margin-left: -85%;
+}
+
+.description {
+  font-size: 1.2rem;  /* Adjusted for better readability */
+  color: white;
+  font-family: 'Be Vietnam Pro', 'Thin 100';
+  font-weight: 200;
+  max-width: 55%;
+  margin-top: -2%;
+  margin-left: -20%;
+}
+
+.profile {
+  border-radius: 50%;
+  scale: 50%;
+  z-index: -1;
+  position: relative;
+  pointer-events: none;
+}
+
+.rectangle {
+  width: 75%;
+  height: 65%;
+  background-color: #6B748E;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  z-index: 1;
+}
+
+.about-container {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  width: 75%;
+  height: 65%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.big-tab {
+  font-size: 1.8rem; /* Adjusted for more prominent buttons on 1080p */
+  color: white;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  z-index: 2;
+}
+
+.big-tab:hover {
+  color: #90E5E2;
+}
+
+.lil-tab {
+  font-weight: 100;
+  font-size: 20px;
+  color: white;
+  font-family: 'Be Vietnam Pro', 'Thin 100';
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.extra-light {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 200;
+}
+
+.extra-light-italic {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.About {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  color: white;
+}
+
+.About h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.bottom-left-button {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  width: 150px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  margin-top: 500px;
+}
+
+.bottom-left-button:hover {
+  background-color: white;
+  color: #283353;
+}
+
+.subtabs-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.subtab {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.subtab:hover::before {
+  content: '➤  ';
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 24px;
+  padding-left: 50px;
+}
+
+.subtab:hover {
+  font-style: italic;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.resume-container iframe {
+  border: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tabs-container {
+    height: auto;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+
+  .ira {
+    font-size: 1.5rem;
+    margin-top: 5%;
+    margin-left: 0;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-left: 0;
+    max-width: 90%;
+  }
+
+  .profile {
+    scale: 80%;
+  }
+
+  .rectangle {
+    width: 90%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+  }
+
+  .about-container {
+    width: 90%;
+    height: 50%;
+  }
+
+  .bottom-left-button {
+    font-size: 20px;
+    width: 130px;
+    margin-top: 200px;
+  }
+
+  .big-tab {
+    font-size: 1.2rem;
+  }
+
+  .subtab {
+    font-size: 18px;
+  }
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .App-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tabs-container {
+    height: 100vh;
+  }
+
+  .ira {
+    font-size: 1.8rem;
+    margin-top: 8%;
+  }
+
+  .description {
+    font-size: 1.05rem;
+    margin-left: 0;
+    max-width: 80%;
+  }
+
+  .profile {
+    scale: 70%;
+  }
+
+  .rectangle {
+    width: 85%;
+    height: 60%;
+  }
+
+  .bottom-left-button {
+    font-size: 22px;
+    width: 140px;
+    margin-top: 300px;
+  }
+
+  .big-tab {
+    font-size: 1.4rem;
+  }
+
+  .subtab {
+    font-size: 20px;
+  }
+}
+
+/* Desktop Devices */
+@media screen and (min-width: 1025px) {
+  .App-header {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .tabs-container {
+    height: 100vh;
+    justify-content: flex-start;
+  }
+
+  .ira {
+    font-size: 2.5rem;  /* Adjusted for larger screens */
+    margin-left: -85%;
+  }
+
+  .description {
+    font-size: 1.2rem;  /* Adjusted for larger screens */
+    margin-left: -20%;
+  }
+
+  .profile {
+    scale: 50%;
+  }
+
+  .rectangle {
+    width: 75%;
+    height: 65%;
+    bottom: 3%;
+    right: 3%;
+  }
+
+  .bottom-left-button {
+    font-size: 24px;
+    width: 150px;
+    margin-top: 500px;
+  }
+
+  .big-tab {
+    font-size: 1.8rem;  /* Adjusted for visibility */
+  }
+
+  .subtab {
+    font-size: 24px;
+  }
+}
+
+/* Desktop Devices (1920px width for 15.6 inch display) */
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
+  .App-header {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .tabs-container {
+    height: 100vh;
+    justify-content: flex-start;
+  }
+
+  .ira {
+    font-size: 2.5rem;  /* Adjusted for larger screens */
+    margin-left: -85%;
+    margin-top: 8%; /* Added margin to ensure space between text and top */
+  }
+
+  .description {
+    font-size: 1.2rem;
+    margin-left: -20%;
+    margin-top: 4%;  /* Added margin-top to create space for rectangle */
+  }
+
+  .profile {
+    scale: 50%;
+  }
+
+  .rectangle {
+    width: 75%; /* Reduced width to prevent overlap */
+    height: 55%;  /* Reduced height */
+    bottom: 8%;  /* Increased bottom margin to move the rectangle up */
+    right: 3%;
+  }
+
+  .bottom-left-button {
+    font-size: 24px;
+    width: 150px;
+    margin-top: 500px;
+  }
+
+  .big-tab {
+    font-size: 1.8rem;  /* Adjusted for visibility */
+  }
+
+  .subtab {
+    font-size: 24px;
+  }
 }
