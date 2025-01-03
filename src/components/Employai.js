@@ -5,15 +5,17 @@ function EmployAI() {
     return (
       <div classname="employai-n">
         {/* Video */}
-        <video 
+        <video
           className="employai-recording"
           src={employai_video}
-          width="740px" 
-          height="410px" 
           autoPlay
           muted
           loop
           controls
+          style={{
+            width: '40vw', // Adjust to your desired percentage of viewport width
+            height: '38vh', // Adjust to your desired percentage of viewport height
+          }}
         />
 
         {/* Title */}

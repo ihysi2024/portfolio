@@ -6,7 +6,7 @@ function GCN() {
     return (
       <div classname="gcn-n">
         {/* Video */}
-        <div style={{display: 'flex', flexDirection: 'column', gap: 20}}>
+        <div style={{display: 'flex', flexDirection: 'column', gap: '1vh'}}>
             <img
             src={gcn}
             width="400px" 
