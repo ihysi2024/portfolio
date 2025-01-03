@@ -138,7 +138,7 @@ function App() {
           >
             <i 
               className="fab fa-github" 
-              style={{ fontSize: '80px', color: 'white', padding: 50 }}
+              style={{ fontSize: '4rem', color: 'white', padding: 50 }}
             ></i>
           </a>
           <a 
@@ -148,11 +148,11 @@ function App() {
           >
             <i 
               className="fab fa-linkedin" 
-              style={{ fontSize: '80px', color: 'white', padding: 50 }}
+              style={{ fontSize: '4rem', color: 'white', padding: 50 }}
             ></i>
           </a>
           <Link to="/Hysi_Resume_Jan2025.pdf" target="_blank" rel="noopener noreferrer">
-            <i className="fas fa-file-alt" style={{ fontSize: '80px', color: 'white', padding: 50 }}></i>
+            <i className="fas fa-file-alt" style={{ fontSize: '4rem', color: 'white', padding: 50 }}></i>
           </Link>
         </div> 
         }
