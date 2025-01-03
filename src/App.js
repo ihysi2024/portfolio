@@ -44,7 +44,7 @@ function App() {
     <Router>
     <div className="App">
       <header className={`App-header ${isSubtabActive ? "header-collapsed" : ""}`}>
-        <div style={{ flexDirection: "column", marginTop: -55 }}>
+        <div style={{ flexDirection: "column", marginTop: "-2%"}}>
           {!isSubtabActive && 
           <img src={iraImage} className="profile" />
           }
@@ -130,7 +130,7 @@ function App() {
 
         {!isSubtabActive && 
         
-        <div style={{ marginTop: "6%", gap: "50%", display: 'flex', flexDirection: 'row', marginLeft:"-25%"}}>
+        <div style={{ marginTop: "6%", gap: "50%", display: 'flex', flexDirection: 'row', marginLeft:"-30%"}}>
           <a 
             href="https://github.com/ihysi2024" 
             target="_blank" 
