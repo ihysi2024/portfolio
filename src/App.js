@@ -44,7 +44,7 @@ function App() {
     <Router>
     <div className="App">
       <header className={`App-header ${isSubtabActive ? "header-collapsed" : ""}`}>
-        <div style={{ flexDirection: "column", marginTop: -55 }}>
+        <div style={{ flexDirection: "column", marginTop: '2vw', marginLeft: '5vw' }}>
           {!isSubtabActive && 
           <img src={iraImage} className="App-profile" />
           }

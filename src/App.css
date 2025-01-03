@@ -40,12 +40,12 @@
 }
 
 .ira {
-  font-size: 2rem;
+  font-size: 2vw;
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 400;
-  margin-left: -70%;
-  margin-top: 10%;
+  margin-left: -2vw;
+  margin-top: 4vw;
 }
 
 .description {
@@ -54,16 +54,17 @@
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 200;
   width: 20vw;
-  margin-left: -5%;
-  margin-top: -3%
+  
 }
 
 .App-profile {
   border-radius: 50%;
-  scale: 0.5; /* Adjust the scaling as needed */
+  width: 13vw; /* Adjust the scaling as needed */
   z-index: -1; /* Push it behind all clickable elements */
   position: relative; /* Ensure z-index applies */
   pointer-events: none; /* Make the image non-interactive */
+  margin-bottom: 5vw;
+  margin-right: 3vw;
 }
 
 .rectangle {
