@@ -58,7 +58,7 @@
 
 .profile {
   border-radius: 50%;
-  scale: 0.45; /* Adjust the scaling as needed */
+  scale: 50%; /* Adjust the scaling as needed */
   z-index: -1; /* Push it behind all clickable elements */
   position: relative; /* Ensure z-index applies */
   pointer-events: none; /* Make the image non-interactive */
@@ -92,7 +92,7 @@
 
 .big-tab {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 0.5rem;
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   cursor: pointer; /* Adds the hand pointer for clickability */
