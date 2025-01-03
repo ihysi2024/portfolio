@@ -3,12 +3,12 @@
 .App {
   text-align: center;
   background-color: #283353;
-  padding: 0; /* Ensure no padding around the app */
-  margin: 0; /* Remove default margin */
-  height: 100vh; /* Full viewport height */
+  padding: 0;
+  margin: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center content both vertically and horizontally */
+  align-items: center;
 }
 
 .App-logo {
@@ -48,12 +48,12 @@
   height: 100%;
   padding: 0;
   margin: 0;
-  flex-grow: 1; /* Allow the container to grow */
-  justify-content: center; /* Center content in the container */
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .ira {
-  font-size: 2rem;
+  font-size: 2.5rem;  /* Slightly larger text for readability */
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 400;
@@ -62,7 +62,7 @@
 }
 
 .description {
-  font-size: 1.15rem;
+  font-size: 1.2rem;  /* Adjusted for better readability */
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 200;
@@ -105,7 +105,7 @@
 }
 
 .big-tab {
-  font-size: 1.5rem;
+  font-size: 1.8rem; /* Adjusted for more prominent buttons on 1080p */
   color: white;
   cursor: pointer;
   margin: 10px 0;
@@ -235,7 +235,7 @@ body {
   .tabs-container {
     height: auto;
     padding: 10px;
-    justify-content: flex-start; /* Align tabs towards the top */
+    justify-content: flex-start;
   }
 
   .ira {
@@ -338,16 +338,16 @@ body {
 
   .tabs-container {
     height: 100vh;
-    justify-content: flex-start; /* Align tabs to the top */
+    justify-content: flex-start;
   }
 
   .ira {
-    font-size: 2rem;
+    font-size: 2.5rem;  /* Adjusted for larger screens */
     margin-left: -85%;
   }
 
   .description {
-    font-size: 1.15rem;
+    font-size: 1.2rem;  /* Adjusted for larger screens */
     margin-left: -20%;
   }
 
@@ -356,8 +356,8 @@ body {
   }
 
   .rectangle {
-    width: 50%;
-    height: 50%;
+    width: 75%;
+    height: 65%;
     bottom: 3%;
     right: 3%;
   }
@@ -369,7 +369,7 @@ body {
   }
 
   .big-tab {
-    font-size: 1.5rem;
+    font-size: 1.8rem;  /* Adjusted for visibility */
   }
 
   .subtab {
