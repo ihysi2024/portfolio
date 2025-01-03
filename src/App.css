@@ -19,13 +19,12 @@
 
 .App-header {
   background-color: #283353;
-  min-height: 100%;
-  min-width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   align-items: flex-start; /* Align items to the top */
   justify-content: flex-start; /* Align items to the left */
-  /* padding: 60px; /* Add padding to the container */
-   
+  /* padding: 60px; /* Add padding to the container */ 
   flex-direction: row;
   position: absolute;
   z-index: 1;
@@ -44,27 +43,24 @@
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 400;
-  margin-left: -2vw;
-  margin-top: 4vw;
+  margin-top: 12vh;
 }
 
 .description {
-  font-size: 1.2vw;
+  font-size: 20px;
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 200;
-  width: 20vw;
-  
+  max-width: 20vw;
+  margin-top: -1vh;
 }
 
-.App-profile {
+.profile {
   border-radius: 50%;
-  width: 13vw; /* Adjust the scaling as needed */
+  scale: 50%; /* Adjust the scaling as needed */
   z-index: -1; /* Push it behind all clickable elements */
   position: relative; /* Ensure z-index applies */
   pointer-events: none; /* Make the image non-interactive */
-  margin-bottom: 5vw;
-  margin-right: 3vw;
 }
 
 .rectangle {
@@ -182,6 +178,8 @@
   flex-direction: column;
   border-radius: 5px;
   padding: 10px;
+  max-width: 20vw;
+  align-items: center;
 }
 
 .subtab {

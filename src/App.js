@@ -44,12 +44,12 @@ function App() {
     <Router>
     <div className="App">
       <header className={`App-header ${isSubtabActive ? "header-collapsed" : ""}`}>
-        <div style={{ flexDirection: "column", marginTop: '2vw', marginLeft: '5vw' }}>
+        <div style={{ flexDirection: "column", marginTop: '-4vh' }}>
           {!isSubtabActive && 
-          <img src={iraImage} className="App-profile" />
+          <img src={iraImage} className="profile" />
           }
           {/* Tabs Container */}
-          <div style={{ zIndex: 2, marginTop: isSubtabActive ? 60 : -95, padding: '10px', borderRadius: '5px' }}>
+          <div style={{ zIndex: 2, marginTop: isSubtabActive ? '6.67vh' : '-10.56vh', padding: '1vw', borderRadius: '5px', marginLeft: '1vw' }}>
             {!isSubtabActive && 
             <div>
             <p className="big-tab" onClick={() => handleTabClick('about')}>About</p>
@@ -121,7 +121,7 @@ function App() {
 
         {/* Introduction Text */}
         {!isSubtabActive && 
-        <div style={{ flexDirection: 'column'}}>
+        <div style={{ flexDirection: 'column', marginTop: -40, marginLeft: -70 }}>
           <p className="ira">Hi, I'm Ira!</p>
           <p className="description">
             CO '25 Chemical Engineering & Computer Science Student @ Northeastern University
