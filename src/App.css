@@ -44,7 +44,8 @@
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 400;
-  margin-top: 30%;
+  margin-top: 12%;
+  margin-left: -85%;
 }
 
 .description {
@@ -52,8 +53,9 @@
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 200;
-  max-width: 400px;
-  margin-top: -5%;
+  max-width: 55%;
+  margin-top: -2%;
+  margin-left: -20%;
 }
 
 .profile {
@@ -77,8 +79,8 @@
 
 .about-container {
   position: absolute;
-  bottom: 60px;
-  right: 60px;
+  bottom: 3%;
+  right: 3%;
   width: 75%;
   height: 65%;
   z-index: 2;

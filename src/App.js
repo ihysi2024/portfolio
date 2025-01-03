@@ -121,7 +121,7 @@ function App() {
 
         {/* Introduction Text */}
         {!isSubtabActive && 
-        <div style={{ flexDirection: 'column', marginTop: -40, marginLeft: -70 }}>
+        <div style={{ flexDirection: 'column'}}>
           <p className="ira">Hi, I'm Ira!</p>
           <p className="description">
             CO '25 Chemical Engineering & Computer Science Student @ Northeastern University
@@ -130,7 +130,7 @@ function App() {
 
         {!isSubtabActive && 
         
-        <div style={{ marginTop: 40 }}>
+        <div style={{ marginTop: "6%", gap: "50%", display: 'flex', flexDirection: 'row', marginLeft:"-25%"}}>
           <a 
             href="https://github.com/ihysi2024" 
             target="_blank" 
@@ -138,7 +138,7 @@ function App() {
           >
             <i 
               className="fab fa-github" 
-              style={{ fontSize: '4rem', color: 'white', padding: 50 }}
+              style={{ fontSize: '4rem', color: 'white'}}
             ></i>
           </a>
           <a 
@@ -148,11 +148,11 @@ function App() {
           >
             <i 
               className="fab fa-linkedin" 
-              style={{ fontSize: '4rem', color: 'white', padding: 50 }}
+              style={{ fontSize: '4rem', color: 'white',}}
             ></i>
           </a>
           <Link to="/Hysi_Resume_Jan2025.pdf" target="_blank" rel="noopener noreferrer">
-            <i className="fas fa-file-alt" style={{ fontSize: '4rem', color: 'white', padding: 50 }}></i>
+            <i className="fas fa-file-alt" style={{ fontSize: '4rem', color: 'white'}}></i>
           </Link>
         </div> 
         }
