@@ -89,14 +89,14 @@
   transition: all 0.3s ease-in-out;
 }
 
-
 .big-tab {
-  font-weight: 400;
-  font-size: 0.5rem;
+  font-size: 0.2rem; /* Increase the font size as needed */
   color: white;
-  font-family: 'Be Vietnam Pro', 'Thin 100';
-  cursor: pointer; /* Adds the hand pointer for clickability */
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
   position: relative; /* Ensure z-index applies */
   z-index: 2; /* Ensure tabs are on top of other elements */
 }
