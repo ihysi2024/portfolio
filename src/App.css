@@ -25,7 +25,7 @@
   align-items: flex-start; /* Align items to the top */
   justify-content: flex-start; /* Align items to the left */
   /* padding: 60px; /* Add padding to the container */
-  gap: 60px; 
+  gap: 5%; 
   flex-direction: row;
   position: absolute;
   z-index: 1;
