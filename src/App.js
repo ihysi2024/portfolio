@@ -121,7 +121,7 @@ function App() {
 
         {/* Introduction Text */}
         {!isSubtabActive && 
-        <div style={{ flexDirection: 'column', marginTop: -40, marginLeft: -70 }}>
+        <div style={{ flexDirection: 'column'}}>
           <p className="ira">Hi, I'm Ira!</p>
           <p className="description">
             CO '25 Chemical Engineering & Computer Science Student @ Northeastern University

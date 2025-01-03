@@ -19,13 +19,13 @@
 
 .App-header {
   background-color: #283353;
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 100%;
+  min-width: 100%;
   display: flex;
   align-items: flex-start; /* Align items to the top */
   justify-content: flex-start; /* Align items to the left */
   /* padding: 60px; /* Add padding to the container */
-  gap: 60px; 
+   
   flex-direction: row;
   position: absolute;
   z-index: 1;
@@ -40,20 +40,22 @@
 }
 
 .ira {
-  font-size: 60px;
+  font-size: 2rem;
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 400;
-  margin-top: 100px
+  margin-left: -70%;
+  margin-top: 10%;
 }
 
 .description {
-  font-size: 20px;
+  font-size: 1.3rem;
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 200;
-  max-width: 400px;
-  margin-top: -50px;
+  max-width: 40%;
+  margin-left: -5%;
+  margin-top: -3%
 }
 
 .App-profile {
