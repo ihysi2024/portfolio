@@ -1,14 +1,9 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
+
 .App {
   text-align: center;
   background-color: #283353;
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .App-logo {
@@ -27,96 +22,88 @@
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 5%;
-  flex-direction: column;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: flex-start; /* Align items to the left */
+  /* padding: 60px; /* Add padding to the container */
+  gap: 60px; 
+  flex-direction: row;
   position: absolute;
   z-index: 1;
-  width: 100vw;
-  padding: 0;
-  margin: 0;
 }
 
 .tabs-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  flex-grow: 1;
-  justify-content: center;
+  flex-direction: column; /* Stack the tabs vertically */
+  align-items: center; /* Center the tabs horizontally */
+  position: relative; /* Keep relative positioning */
+  z-index: 2; /* Ensure above other elements */
 }
 
 .ira {
-  font-size: 2.5rem;  /* Slightly larger text for readability */
+  font-size: 60px;
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 400;
-  margin-top: 12%;
-  margin-left: -85%;
+  margin-top: 100px
 }
 
 .description {
-  font-size: 1.2rem;  /* Adjusted for better readability */
+  font-size: 20px;
   color: white;
   font-family: 'Be Vietnam Pro', 'Thin 100';
   font-weight: 200;
-  max-width: 55%;
-  margin-top: -2%;
-  margin-left: -20%;
+  max-width: 400px;
+  margin-top: -50px;
 }
 
-.profile {
+.App-profile {
   border-radius: 50%;
-  scale: 50%;
-  z-index: -1;
-  position: relative;
-  pointer-events: none;
+  scale: 0.5; /* Adjust the scaling as needed */
+  z-index: -1; /* Push it behind all clickable elements */
+  position: relative; /* Ensure z-index applies */
+  pointer-events: none; /* Make the image non-interactive */
 }
 
 .rectangle {
-  width: 75%;
-  height: 65%;
+  width: 75%; /* Adjust to desired width */
+  height: 65%; /* Adjust to desired height */
   background-color: #6B748E;
   border-radius: 10px;
   position: absolute;
-  bottom: 3%;
-  right: 3%;
+  bottom: 60px;
+  right: 60px;
   z-index: 1;
 }
 
 .about-container {
   position: absolute;
-  bottom: 3%;
-  right: 3%;
-  width: 75%;
-  height: 65%;
-  z-index: 2;
+  bottom: 60px; /* Same as the rectangle */
+  right: 60px; /* Same as the rectangle */
+  width: 75%; /* Match rectangle width */
+  height: 65%; /* Match rectangle height */
+  z-index: 2; /* Render above the rectangle */
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  transition: all 0.3s ease-in-out;
 }
+
 
 .big-tab {
-  font-size: 1.8rem; /* Adjusted for more prominent buttons on 1080p */
+  font-weight: 400;
+  font-size: 40px;
   color: white;
-  cursor: pointer;
-  margin: 10px 0;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  z-index: 2;
+  font-family: 'Be Vietnam Pro', 'Thin 100';
+  cursor: pointer; /* Adds the hand pointer for clickability */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  position: relative; /* Ensure z-index applies */
+  z-index: 2; /* Ensure tabs are on top of other elements */
 }
 
+
+
 .big-tab:hover {
-  color: #90E5E2;
+  color: #90E5E2; /* Changes the font color on hover */
 }
 
 .lil-tab {
@@ -143,10 +130,10 @@
 
 .About {
   position: absolute;
-  top: 10px;
+  top: 10px; /* Adjust to position the About content as desired */
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 2; /* Make sure it renders above the rectangle */
   color: white;
 }
 
@@ -155,454 +142,37 @@
   margin-bottom: 20px;
 }
 
-.bottom-left-button {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  border-radius: 30px;
-  width: 150px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-align: center;
-  margin-top: 500px;
-}
-
-.bottom-left-button:hover {
-  background-color: white;
-  color: #283353;
-}
-
-.subtabs-container {
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.subtab {
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  margin: 5px 0;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.subtab:hover::before {
-  content: '➤  ';
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
-  font-size: 24px;
-  padding-left: 50px;
-}
-
-.subtab:hover {
-  font-style: italic;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.resume-container iframe {
-  border: none;
-}
-
-body {
-  overflow: hidden;
-}
-
-/* Mobile Devices */
-@media screen and (max-width: 768px) {
-  .App-header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .tabs-container {
-    height: auto;
-    padding: 10px;
-    justify-content: flex-start;
-  }
-
-  .ira {
-    font-size: 1.5rem;
-    margin-top: 5%;
-    margin-left: 0;
-  }
-
-  .description {
-    font-size: 1rem;
-    margin-left: 0;
-    max-width: 90%;
-  }
-
-  .profile {
-    scale: 80%;
-  }
-
-  .rectangle {
-    width: 90%;
-    height: 50%;
-    bottom: 0;
-    right: 0;
-  }
-
-  .about-container {
-    width: 90%;
-    height: 50%;
-  }
-
-  .bottom-left-button {
-    font-size: 20px;
-    width: 130px;
-    margin-top: 200px;
-  }
-
-  .big-tab {
-    font-size: 1.2rem;
-  }
-
-  .subtab {
-    font-size: 18px;
-  }
-}
-
-/* Tablet Devices */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .App-header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .tabs-container {
-    height: 100vh;
-  }
-
-  .ira {
-    font-size: 1.8rem;
-    margin-top: 8%;
-  }
-
-  .description {
-    font-size: 1.05rem;
-    margin-left: 0;
-    max-width: 80%;
-  }
-
-  .profile {
-    scale: 70%;
-  }
-
-  .rectangle {
-    width: 85%;
-    height: 60%;
-  }
-
-  .bottom-left-button {
-    font-size: 22px;
-    width: 140px;
-    margin-top: 300px;
-  }
-
-  .big-tab {
-    font-size: 1.4rem;
-  }
-
-  .subtab {
-    font-size: 20px;
-  }
-}
-
-/* Desktop Devices */
-@media screen and (min-width: 1025px) {
-  .App-header {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .tabs-container {
-    height: 100vh;
-    justify-content: flex-start;
-  }
-
-  .ira {
-    font-size: 2.5rem;  /* Adjusted for larger screens */
-    margin-left: -85%;
-  }
-
-  .description {
-    font-size: 1.2rem;  /* Adjusted for larger screens */
-    margin-left: -20%;
-  }
-
-  .profile {
-    scale: 50%;
-  }
-
-  .rectangle {
-    width: 75%;
-    height: 65%;
-    bottom: 3%;
-    right: 3%;
-  }
-
-  .bottom-left-button {
-    font-size: 24px;
-    width: 150px;
-    margin-top: 500px;
-  }
-
-  .big-tab {
-    font-size: 1.8rem;  /* Adjusted for visibility */
-  }
-
-  .subtab {
-    font-size: 24px;
-  }
-}
-
-/* Desktop Devices (1920px width for 15.6 inch display) */
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
-  .App-header {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .tabs-container {
-    height: 100vh;
-    justify-content: flex-start;
-  }
-
-  .ira {
-    font-size: 2.5rem;  /* Adjusted for larger screens */
-    margin-left: -85%;
-    margin-top: 8%; /* Added margin to ensure space between text and top */
-  }
-
-  .description {
-    font-size: 1.2rem;
-    margin-left: -20%;
-    margin-top: 4%;  /* Added margin-top to create space for rectangle */
-  }
-
-  .profile {
-    scale: 50%;
-  }
-
-  .rectangle {
-    width: 70%; /* Reduced width to prevent overlap */
-    height: 55%;  /* Reduced height */
-    bottom: 8%;  /* Increased bottom margin to move the rectangle up */
-    right: 3%;
-  }
-
-  .bottom-left-button {
-    font-size: 24px;
-    width: 150px;
-    margin-top: 500px;
-  }
-
-  .big-tab {
-    font-size: 1.8rem;  /* Adjusted for visibility */
-  }
-
-  .subtab {
-    font-size: 24px;
-  }
-}@import '~@fortawesome/fontawesome-free/css/all.css';
-
-.App {
-  text-align: center;
-  background-color: #283353;
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #283353;
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 5%;
-  flex-direction: column;
-  position: absolute;
-  z-index: 1;
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-}
-
-.tabs-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  flex-grow: 1;
-  justify-content: center;
-}
-
-.ira {
-  font-size: 2.5rem;  /* Slightly larger text for readability */
-  color: white;
-  font-family: 'Be Vietnam Pro', 'Thin 100';
-  font-weight: 400;
-  margin-top: 12%;
-  margin-left: -85%;
-}
-
-.description {
-  font-size: 1.2rem;  /* Adjusted for better readability */
-  color: white;
-  font-family: 'Be Vietnam Pro', 'Thin 100';
-  font-weight: 200;
-  max-width: 55%;
-  margin-top: -2%;
-  margin-left: -20%;
-}
-
-.profile {
-  border-radius: 50%;
-  scale: 50%;
-  z-index: -1;
-  position: relative;
-  pointer-events: none;
-}
-
-.rectangle {
-  width: 75%;
-  height: 65%;
-  background-color: #6B748E;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 3%;
-  right: 3%;
-  z-index: 1;
-}
-
-.about-container {
-  position: absolute;
-  bottom: 3%;
-  right: 3%;
-  width: 75%;
-  height: 65%;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
-
 .big-tab {
-  font-size: 1.8rem; /* Adjusted for more prominent buttons on 1080p */
+  font-size: 36px;
   color: white;
   cursor: pointer;
   margin: 10px 0;
   padding: 5px 10px;
   border-radius: 5px;
   transition: background-color 0.3s;
-  z-index: 2;
-}
-
-.big-tab:hover {
-  color: #90E5E2;
-}
-
-.lil-tab {
-  font-weight: 100;
-  font-size: 20px;
-  color: white;
-  font-family: 'Be Vietnam Pro', 'Thin 100';
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.extra-light {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-weight: 200;
-}
-
-.extra-light-italic {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.About {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  color: white;
-}
-
-.About h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
 }
 
 .bottom-left-button {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  border-radius: 30px;
-  width: 150px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-align: center;
+  font-family: 'Be Vietnam Pro', sans-serif; /* Use the specified font */
+  font-weight: 400; /* Font weight */
+  font-size: 24px; /* Font size */
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text */
+  border: 2px solid white; /* White border */
+  border-radius: 30px; /* Rounded corners */
+  width: 150px; /* Fixed width */
+  padding: 10px 20px; /* Add padding for better spacing */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  text-align: center; /* Center-align the text */
   margin-top: 500px;
 }
 
 .bottom-left-button:hover {
-  background-color: white;
-  color: #283353;
+  background-color: white; /* White background on hover */
+  color: #283353; /* Change text color to match the app's background */
 }
+
 
 .subtabs-container {
   display: flex;
@@ -622,18 +192,23 @@ body {
 }
 
 .subtab:hover::before {
-  content: '➤  ';
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+  content: '➤  '; /* Arrow symbol */
+  left: 20px; /* Adjust based on desired arrow position */
+  top: 50%; /* Center the arrow vertically */
+  transform: translateY(-50%); /* Perfect vertical centering */
   color: white;
   font-size: 24px;
-  padding-left: 50px;
+  transition: color 0.3s;
+  padding-left: 50
+  
 }
 
+
+
 .subtab:hover {
-  font-style: italic;
+  font-style: italic; /* Make the font italic on hover */
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -649,209 +224,5 @@ body {
 }
 
 body {
-  overflow: hidden;
-}
-
-/* Mobile Devices */
-@media screen and (max-width: 768px) {
-  .App-header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .tabs-container {
-    height: auto;
-    padding: 10px;
-    justify-content: flex-start;
-  }
-
-  .ira {
-    font-size: 1.5rem;
-    margin-top: 5%;
-    margin-left: 0;
-  }
-
-  .description {
-    font-size: 1rem;
-    margin-left: 0;
-    max-width: 90%;
-  }
-
-  .profile {
-    scale: 80%;
-  }
-
-  .rectangle {
-    width: 90%;
-    height: 50%;
-    bottom: 0;
-    right: 0;
-  }
-
-  .about-container {
-    width: 90%;
-    height: 50%;
-  }
-
-  .bottom-left-button {
-    font-size: 20px;
-    width: 130px;
-    margin-top: 200px;
-  }
-
-  .big-tab {
-    font-size: 1.2rem;
-  }
-
-  .subtab {
-    font-size: 18px;
-  }
-}
-
-/* Tablet Devices */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .App-header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .tabs-container {
-    height: 100vh;
-  }
-
-  .ira {
-    font-size: 1.8rem;
-    margin-top: 8%;
-  }
-
-  .description {
-    font-size: 1.05rem;
-    margin-left: 0;
-    max-width: 80%;
-  }
-
-  .profile {
-    scale: 70%;
-  }
-
-  .rectangle {
-    width: 85%;
-    height: 60%;
-  }
-
-  .bottom-left-button {
-    font-size: 22px;
-    width: 140px;
-    margin-top: 300px;
-  }
-
-  .big-tab {
-    font-size: 1.4rem;
-  }
-
-  .subtab {
-    font-size: 20px;
-  }
-}
-
-/* Desktop Devices */
-@media screen and (min-width: 1025px) {
-  .App-header {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .tabs-container {
-    height: 100vh;
-    justify-content: flex-start;
-  }
-
-  .ira {
-    font-size: 2.5rem;  /* Adjusted for larger screens */
-    margin-left: -85%;
-  }
-
-  .description {
-    font-size: 1.2rem;  /* Adjusted for larger screens */
-    margin-left: -20%;
-  }
-
-  .profile {
-    scale: 50%;
-  }
-
-  .rectangle {
-    width: 75%;
-    height: 65%;
-    bottom: 3%;
-    right: 3%;
-  }
-
-  .bottom-left-button {
-    font-size: 24px;
-    width: 150px;
-    margin-top: 500px;
-  }
-
-  .big-tab {
-    font-size: 1.8rem;  /* Adjusted for visibility */
-  }
-
-  .subtab {
-    font-size: 24px;
-  }
-}
-
-/* Desktop Devices (1920px width for 15.6 inch display) */
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
-  .App-header {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .tabs-container {
-    height: 100vh;
-    justify-content: flex-start;
-  }
-
-  .ira {
-    font-size: 2.5rem;  /* Adjusted for larger screens */
-    margin-left: -85%;
-    margin-top: 8%; /* Added margin to ensure space between text and top */
-  }
-
-  .description {
-    font-size: 1.2rem;
-    margin-left: -20%;
-    margin-top: 4%;  /* Added margin-top to create space for rectangle */
-  }
-
-  .profile {
-    scale: 50%;
-  }
-
-  .rectangle {
-    width: 75%; /* Reduced width to prevent overlap */
-    height: 55%;  /* Reduced height */
-    bottom: 8%;  /* Increased bottom margin to move the rectangle up */
-    right: 3%;
-  }
-
-  .bottom-left-button {
-    font-size: 24px;
-    width: 150px;
-    margin-top: 500px;
-  }
-
-  .big-tab {
-    font-size: 1.8rem;  /* Adjusted for visibility */
-  }
-
-  .subtab {
-    font-size: 24px;
-  }
+  overflow: hidden; /* Disable scrollbars */
 }
