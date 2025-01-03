@@ -24,6 +24,7 @@ function Timeline() {
           
         ))}
       </div>
+      <div class="timeline-line"></div>
     </div>
   );
 }

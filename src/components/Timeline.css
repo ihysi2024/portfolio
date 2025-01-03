@@ -1,3 +1,4 @@
+/* Timeline Container */
 .timeline-container {
   display: flex;
   justify-content: center;
@@ -15,11 +16,12 @@
   position: relative;
 }
 
+/* Event Boxes */
 .timeline-event {
   display: flex;
   flex-direction: column; /* Stack content vertically */
   align-items: center;
-  margin-right: 100px; /* Add space between events */
+  margin-right: 60px; /* Add space between events */
   position: relative;
   min-width: 200px;
   opacity: 0; /* Initially invisible */
@@ -53,6 +55,7 @@
   }
 }
 
+/* Timeline Marker */
 .timeline-marker {
   width: 20px; /* Adjust size */
   height: 20px;
@@ -62,6 +65,7 @@
   margin-bottom: 10px; /* Add space between the marker and the content */
 }
 
+/* Timeline Content */
 .timeline-content {
   padding: 15px;
   background-color: #f4f4f4;
@@ -88,32 +92,19 @@
   color: #666;
 }
 
-/* Add a horizontal line connecting the markers */
-.timeline::after {
+/* Line Separator Below Events */
+.timeline-line {
   content: '';
   position: absolute;
-  top: 50%; /* Center the line vertically */
-  left: 0; /* Start from the very left of the timeline container */
-  width: 100%; /* Extend to the full width of the timeline container */
-  height: 2px; /* Thickness of the line */
+  width: 75vw; /* Full width of the timeline container */
+  height: 2px; /* Line thickness */
   background-color: #90E5E2; /* Line color */
-  transform: translateY(-50%); /* Vertically center the line */
-  z-index: -1; /* Ensure the line is behind the markers */
+  z-index: -1; /* Ensure the line is behind the events */
+  bottom: 200px;
+  right: -150px;
 }
 
-/* Add a horizontal line before the first marker */
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 50%; /* Center the line vertically */
-  left: -82px; /* Extend the line beyond the first marker */
-  width: 800px; /* Length of the line before the first event */
-  height: 2px; /* Thickness of the line */
-  background-color: #90E5E2; /* Line color */
-  transform: translateY(-50%); /* Vertically center the line */
-  z-index: -1; /* Ensure the line is behind the markers */
-}
-
+/* Event Hover Effect */
 .timeline-event:hover {
   transform: translateY(-20px); /* Move the event up slightly */
 }
