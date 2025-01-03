@@ -16,7 +16,7 @@ function About() {
       marginLeft: 'auto',
       marginRight: 'auto',
       padding: '20px', // Add padding to ensure content is not stuck to the edges
-      height: '60vh',  // Ensure the container takes full height of the viewport
+      height: '90%',  // Ensure the container takes full height of the viewport
     }}>
       {/* Text content above the timeline */}
       <p style={{ paddingTop: '10px' }}>

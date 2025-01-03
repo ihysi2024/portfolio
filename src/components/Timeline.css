@@ -100,8 +100,8 @@
   height: 2px; /* Line thickness */
   background-color: #90E5E2; /* Line color */
   z-index: -1; /* Ensure the line is behind the events */
-  bottom: 200px;
-  right: -150px;
+  bottom: 50%;
+  right: -17.6%;
 }
 
 /* Event Hover Effect */
