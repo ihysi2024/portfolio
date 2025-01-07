@@ -10,6 +10,8 @@
 .gcn-content {
   display: flex;
   flex-direction: 'row';
+  width: 100%;
+  gap: 5vw;
 }
 
 /* Image container */
@@ -21,6 +23,7 @@
   padding-right: 1vw;
   margin-top: 13vh;
   gap: 1vh;
+  width: 30vw;
 }
 
 .gcn-recording {
@@ -29,6 +32,7 @@
   max-width: 400px; /* Adjust as needed */
   height: auto;
   border: 5px solid #283353;
+  margin-left: 5vw;
 }
 
 /* Text content container */
@@ -39,8 +43,7 @@
   bottom: 4vw;
   right: 6vh;
   top: 5vh;
-  height: 90vh;
-  width: 50vw;
+  height: 100%;
 }
 
 /* Title and description */
@@ -65,12 +68,16 @@
   font-weight: 300;
   color: #ffffff;
   text-align: justify;
+  width: 40vw;
+  
 }
 
 /* Individual sections */
 .gcn-section {
   display: flex;
   flex-direction: column;
+  width: 40vw;
+  margin-bottom: 2vh;
 }
 
 .gcn-backend-title {
@@ -97,6 +104,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 2vh;
+  gap: 1vw;
 }
 
 .gcn-tool-item {
@@ -104,7 +112,7 @@
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 300;
   color: #ffffff;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   border: 2px solid white;
   border-radius: 50px;
   transition: all 0.3s ease;
