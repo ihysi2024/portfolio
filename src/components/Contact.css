@@ -1,6 +1,8 @@
 .contact-container {
     width: 80vw;
     height: 65vh;
+    top: 20%;
+    position: relative;
     margin: 0 auto;
     padding: 5vw;
     background-color: transparent;

@@ -3,17 +3,19 @@
   display: flex;
   justify-content: center;
   padding: 50px;
-  width: 800px;
+  width: 75vw;
   background-color: transparent;
   position: absolute; /* Enable absolute positioning */
-  top: 150px; /* Distance from the bottom of the screen */
-  left: 232px; /* Distance from the right side of the screen */
+  top: 30%; /* Distance from the bottom of the screen */
 }
 
 .timeline {
   display: flex; /* Flexbox for horizontal layout */
   align-items: center; /* Vertically align events */
   position: relative;
+  justify-content: center;
+  align-content: center;
+  gap: 5vw;
 }
 
 /* Event Boxes */
@@ -21,9 +23,8 @@
   display: flex;
   flex-direction: column; /* Stack content vertically */
   align-items: center;
-  margin-right: 60px; /* Add space between events */
   position: relative;
-  min-width: 200px;
+  max-width: 12vw;
   opacity: 0; /* Initially invisible */
   animation: fadeInUp 0.8s ease-out forwards; /* Fade-in and slide-up animation */
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Longer and smoother transition */
@@ -101,7 +102,6 @@
   background-color: #90E5E2; /* Line color */
   z-index: -1; /* Ensure the line is behind the events */
   bottom: 50%;
-  right: -17.6%;
 }
 
 /* Event Hover Effect */

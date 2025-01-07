@@ -10,7 +10,7 @@ function About() {
       alignItems: 'center',  // Center horizontally
       fontFamily: 'Be Vietnam Pro',
       fontWeight: '200',
-      fontSize: '1.1vw',
+      fontSize: '1.2vw',
       width: '100%',
       maxWidth: '80vw',  // Limit width for large screens
       marginLeft: 'auto',

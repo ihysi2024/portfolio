@@ -19,10 +19,10 @@
 /* Flexbox layout: Video on the left, text on the right */
 .taskmaster-content {
   display: flex;
-  gap: 2rem;
   align-items: flex-start;
   flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
   width: 60vw;
+  height: 90vh;
   gap: 5vw;
 }
 
