@@ -65,21 +65,21 @@
   
   /* Screenshots specific styles */
   .nightlife {
-    width: 16vw;
+    width: 28vh;
     position: relative;
     left: 15%;
     top: 5%;
   }
   
   .taskmaster {
-    width: 17vw;
+    width: 28vh;
     left: -35%;
     top: 10%;
     position: relative;
   }
   
   .employai {
-    width: 35vw;
+    width: 61vh;
     left: 30%;
     top: 5%;
     position: relative;
@@ -87,7 +87,7 @@
   
   .pantry {
     width: 17vw;
-    height:12vw;
+    height:21vh;
     left: -78%;
     top: 60%;
     position: relative;
@@ -95,7 +95,7 @@
   
   .gnn {
     width: 17vw;
-    height:12vw;
+    height:21vh;
     left: -59%;
     top: 60%;
     position: relative;

@@ -156,7 +156,6 @@
   cursor: pointer; /* Pointer cursor on hover */
   transition: all 0.3s ease; /* Smooth hover effect */
   text-align: center; /* Center-align the text */
-  margin-top: 52vh;
 }
 
 .bottom-left-button:hover {
@@ -170,11 +169,11 @@
   flex-direction: column;
   border-radius: 5px;
   padding: 1vw;
-  max-width:16vw;
-  margin-top: -3vh;
+  max-width:100%;
+  margin-top: -4vh;
   justify-content: center;
   align-items: center;
-  padding-left: 12%;
+  
 }
 
 .subtab {

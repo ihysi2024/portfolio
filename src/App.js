@@ -49,7 +49,7 @@ function App() {
           <img src={iraImage} className="profile" />
           }
           {/* Tabs Container */}
-          <div style={{ zIndex: 2, marginTop: isSubtabActive ? '-7vh' : '-10.56vh', padding: '1vh', borderRadius: '5px', marginLeft: '1vw' }}>
+          <div style={{ zIndex: 2, marginTop: isSubtabActive ? '-7vh' : '-10.56vh', padding: '1vh', borderRadius: '5px', marginLeft: '-1vw' }}>
             {!isSubtabActive && 
             <div>
             <p className="big-tab" onClick={() => handleTabClick('about')}>About</p>
@@ -209,7 +209,7 @@ function App() {
         </div>}
     
         {tab == "contact" && 
-          <div className="all-projects-container">
+          <div className="about-container">
           <Contact />
         </div>}
     </div>

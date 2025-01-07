@@ -33,7 +33,7 @@ function EmployAI() {
             <div className="employai-tech-stack">
               <div className="employai-backend-item">Javascript</div>
               <div className="employai-backend-item">Firebase</div>
-            </div>
+            </div>    
 
             <div className="employai-frontend-title">Frontend</div>
             <div className="employai-tech-stack">

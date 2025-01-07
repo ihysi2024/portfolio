@@ -57,19 +57,19 @@
 
 /* Description styling */
 .nightlife-desc {
-  font-size: 1.4rem;
+  font-size: 1.4vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 300;
   color: #ffffff;
   text-align: left;
-  max-width: 70vw;
+  max-width: 100%;
 }
 
 /* Section titles (Backend, Frontend, Tools) */
 .nightlife-backend-title,
 .nightlife-frontend-title,
 .nightlife-tool-title {
-  font-size: 1.8rem;
+  font-size: 1.8vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
   color: rgba(0, 255, 255, 0.6);
@@ -89,7 +89,7 @@
 .nightlife-backend-item,
 .nightlife-frontend-item,
 .nightlife-tool-item {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 300;
   color: #ffffff;

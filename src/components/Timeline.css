@@ -7,6 +7,7 @@
   background-color: transparent;
   position: absolute; /* Enable absolute positioning */
   top: 30%; /* Distance from the bottom of the screen */
+  bottom: 1%;
 }
 
 .timeline {
@@ -24,7 +25,8 @@
   flex-direction: column; /* Stack content vertically */
   align-items: center;
   position: relative;
-  max-width: 12vw;
+  max-width: 13vw;
+  max-height: 40vh;
   opacity: 0; /* Initially invisible */
   animation: fadeInUp 0.8s ease-out forwards; /* Fade-in and slide-up animation */
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Longer and smoother transition */
@@ -75,21 +77,30 @@
   text-align: center;
 }
 
-.timeline-content h3 {
-  margin: 0;
-  color: #12BDB7;
-  font-size: 100%;
-}
-
-.timeline-content h4 {
-  margin: 10px 0;
-  font-size: 120%;
+.timeline-date {
+  font-size: 1.1vw;
+  font-family: 'Be Vietnam Pro';
+  font-weight: 400;
+  color: #666;
+  text-align: center;
   font-weight: bold;
-  color: #283353;
 }
 
-.timeline-content p {
-  font-size: 80%;
+
+.timeline-title {
+  font-size: 1.2vw;
+  font-family: 'Be Vietnam Pro';
+  font-weight: 400;
+  text-align: center;
+  font-weight: bold;
+  color: #12BDB7;
+}
+
+.timeline-description {
+  font-size: 0.9vw;
+  font-family: 'Be Vietnam Pro';
+  font-weight: 400;
+  text-align: center;
   color: #666;
 }
 
