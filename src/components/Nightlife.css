@@ -1,161 +1,105 @@
-.nightlife-n {
-  position: relative;
-  top: 100px;
-  left: -500px;
+/* Main container */
+.nightlife-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
+/* Flexbox layout: Video on the left, text on the right */
+.nightlife-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  width: 60vw;
+  gap: 5vw;
+}
+
+/* Video styling */
 .nightlife-recording {
+  flex: 1; /* Allow the video to take up available space */
   border-radius: 10px; /* Optional: Add rounded corners */
-  width: 400px;
-  position: relative; /* Ensure it's positioned relative to allow left adjustment */
-  left: -400px; /* Move the video to the left */
-  top: 100px;
+  max-width:20vw;
   border: 10px solid #283353;
-    
 }
 
+/* Text content styling */
+.nightlife-text {
+  flex: 2; /* Allow the text content to take up more space */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Title styling */
 .nightlife-title {
-  font-size: 48px;
-  font-family: 'Be Vietnam Pro'; /* Use the specified font */
-  font-weight: 400; /* Lighter font weight */
-  color: rgba(0, 255, 255, 0.6); /* Adjust color */
-  position: relative; /* Use relative positioning */
-  top: -720px; /* Adjust positioning */
-  left: -50px; /* Adjust positioning */
-  margin-bottom: -40px; /* Add "px" to avoid potential issues */
-
-}
-
-.nightlife-title-separator {
-  width: 700px;
-  height: 1px;
-  background-color: #ffffff; /* White line */
-  border-radius: 1px;
-  font-family: 'Be Vietnam Pro', sans-serif; /* Use the specified font */
-  font-weight: 200; /* Font weight */
-  position: relative; /* Use relative positioning */
-  top: -670px; /* Adjust positioning */
-  left: 230px; /* Adjust positioning */
-}
-
-.nightlife-desc {
-  font-size: 20px; /* Adjust as needed */
-  font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-  font-weight: 300; /* Lighter font weight */
-  color: #ffffff; /* Adjust color */
-  margin-top: 20px; /* Add spacing from the separator */
-  text-align: left; /* Center-align the text */
-  position: relative; /* Adjust positioning */
-  top: -650px; /* Ensure it's positioned relative to the separator */
-  left: 230px; /* Adjust alignment */
-  width: 700px;
-}
-
-.nightlife-backend-title {
-  font-size: 30px; /* Adjust as needed */
-  font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-  font-weight: 400; /* Lighter font weight */
-  color: rgba(0, 255, 255, 0.6); /* Adjust color */
-  margin-top: 20px; /* Add spacing from the separator */
-  text-align: center; /* Center-align the text */
-  position: relative; /* Adjust positioning */
-  top: -600px; /* Ensure it's positioned relative to the separator */
-  left: 230px; /* Adjust alignment */
+  font-size: 2.5rem;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 255, 255, 0.6);
+  margin-bottom: 0.5rem;
   text-align: left;
 }
 
+/* Title separator */
+.nightlife-title-separator {
+  width: 100%;
+  max-width: 70vw;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: -2vh;
+}
+
+/* Description styling */
+.nightlife-desc {
+  font-size: 1.4rem;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: left;
+  max-width: 70vw;
+}
+
+/* Section titles (Backend, Frontend, Tools) */
+.nightlife-backend-title,
+.nightlife-frontend-title,
+.nightlife-tool-title {
+  font-size: 1.8rem;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 255, 255, 0.6);
+  margin-top: 1rem;
+  text-align: left;
+}
+
+/* Tech stack container */
 .nightlife-tech-stack {
   display: flex;
-  flex-direction: row;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: -3vh;
 }
 
-.nightlife-backend-item {
-  font-size: 20px; /* Adjust as needed */
-  font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-  font-weight: 300; /* Lighter font weight */
-  color: #ffffff; /* Adjust color */
-  margin-top: 20px; /* Add spacing from the separator */
-  position: relative; /* Adjust positioning */
-  top: -600px; /* Ensure it's positioned relative to the separator */
-  left: 230px; /* Adjust alignment */
-  text-align: left;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: 2px solid white;
-  border-radius: 50px;
-}
-
-.nightlife-frontend-title {
-  font-size: 30px; /* Adjust as needed */
-  font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-  font-weight: 400; /* Lighter font weight */
-  color: rgba(0, 255, 255, 0.6); /* Adjust color */
-  margin-top: 20px; /* Add spacing from the separator */
-  text-align: center; /* Center-align the text */
-  position: relative; /* Adjust positioning */
-  top: -550px; /* Ensure it's positioned relative to the separator */
-  left: 230px; /* Adjust alignment */
-  text-align: left;
-}
-
-
-
-.nightlife-frontend-item {
-  font-size: 20px; /* Adjust as needed */
-  font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-  font-weight: 300; /* Lighter font weight */
-  color: #ffffff; /* Adjust color */
-  margin-top: -30px; /* Add spacing from the separator */
-  position: relative; /* Adjust positioning */
-  top: -500px; /* Ensure it's positioned relative to the separator */
-  left: 230px; /* Adjust alignment */
-  text-align: left;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: 2px solid white;
-  border-radius: 50px;
-}
-
-.nightlife-tool-title {
-  font-size: 30px; /* Adjust as needed */
-  font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-  font-weight: 400; /* Lighter font weight */
-  color: rgba(0, 255, 255, 0.6); /* Adjust color */
-  margin-top: 20px; /* Add spacing from the separator */
-  text-align: center; /* Center-align the text */
-  position: relative; /* Adjust positioning */
-  top: -440px; /* Ensure it's positioned relative to the separator */
-  left: 230px; /* Adjust alignment */
-  text-align: left;
-}
-
+/* Individual tech stack items */
+.nightlife-backend-item,
+.nightlife-frontend-item,
 .nightlife-tool-item {
-  font-size: 20px; /* Adjust as needed */
-  font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-  font-weight: 300; /* Lighter font weight */
-  color: #ffffff; /* Adjust color */
-  margin-top: -30px; /* Add spacing from the separator */
-  position: relative; /* Adjust positioning */
-  top: -390px; /* Ensure it's positioned relative to the separator */
-  left: 230px; /* Adjust alignment */
-  text-align: left;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  font-size: 1.2rem;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 0.5rem 2rem;
   border: 2px solid white;
   border-radius: 50px;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
-.nightlife-backend-item:hover, 
-.nightlife-frontend-item:hover, 
+.nightlife-backend-item:hover,
+.nightlife-frontend-item:hover,
 .nightlife-tool-item:hover {
-  color: rgba(0, 255, 255, 0.6); /* Change background color on hover */
-  border: 2px solid rgba(0, 255, 255, 0.6);
-  transition: color 0.3s ease; /* Smooth transition */
+  color: rgba(0, 255, 255, 0.6);
+  border-color: rgba(0, 255, 255, 0.6);
 }

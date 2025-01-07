@@ -1,145 +1,116 @@
-.gcn-n {
-    position: relative;
-    top: 10vh;
-    left: -50vh;
-  }
+/* Main container */
+.gcn-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   
-  .gcn-recording {
-    border-radius: 10px; /* Optional: Add rounded corners */
-    width: 40vh;
-    position: relative; /* Ensure it's positioned relative to allow left adjustment */
-    left: -13vw; /* Move the video to the left */
-    top: 30vh;
-    border: 10px solid #283353;
-      
-  }
-  
-  .gcn-title {
-    font-size: 2.8vw;
-    font-family: 'Be Vietnam Pro'; /* Use the specified font */
-    font-weight: 400; /* Lighter font weight */
-    color: rgba(0, 255, 255, 0.6); /* Adjust color */
-    position: relative; /* Use relative positioning */
-    top: -55vh; /* Adjust positioning */
-    left: 4.5vw; /* Adjust positioning */
-    margin-bottom: -3vh; /* Add "px" to avoid potential issues */
-   }
-  
-  .gcn-title-separator {
-    width: 42vw;
-    height: 1px;
-    background-color: #ffffff; /* White line */
-    border-radius: 1px;
-    font-family: 'Be Vietnam Pro', sans-serif; /* Use the specified font */
-    font-weight: 200; /* Font weight */
-    position: relative; /* Use relative positioning */
-    top: -51vh; /* Adjust positioning */
-    left: 13.5vw; /* Adjust positioning */
-  }
-  
-  .gcn-desc {
-    font-size: 1.1vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 300; /* Lighter font weight */
-    color: #ffffff; /* Adjust color */
-    margin-top: 2vh; /* Add spacing from the separator */
-    text-align: left; /* Center-align the text */
-    position: relative; /* Adjust positioning */
-    top: -51vh; /* Ensure it's positioned relative to the separator */
-    left: 13.5vw; /* Adjust alignment */
-    width: 43vw;
-  }
-  
-  .gcn-backend-title {
-    font-size: 1.8vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 400; /* Lighter font weight */
-    color: rgba(0, 255, 255, 0.6); /* Adjust color */
-    margin-top: 2vh; /* Add spacing from the separator */
-    text-align: center; /* Center-align the text */
-    position: relative; /* Adjust positioning */
-    top: -50vh; /* Ensure it's positioned relative to the separator */
-    left: 13.5vw; /* Adjust alignment */
-    text-align: left;
-  }
-  
-  .gcn-tech-stack {
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-  }
-  
-  .gcn-backend-item {
-    font-size: 1.2vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 300; /* Lighter font weight */
-    color: #ffffff; /* Adjust color */
-    margin-top: 2vh; /* Add spacing from the separator */
-    position: relative; /* Adjust positioning */
-    top: -60vh; /* Ensure it's positioned relative to the separator */
-    left: 13.5vw; /* Adjust alignment */
-    text-align: left;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 2px solid white;
-    border-radius: 50px;
-  }
-  
-  
-  .gcn-tool-title {
-    font-size: 1.8vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 400; /* Lighter font weight */
-    color: rgba(0, 255, 255, 0.6); /* Adjust color */
-    margin-top: 2vh; /* Add spacing from the separator */
-    text-align: center; /* Center-align the text */
-    position: relative; /* Adjust positioning */
-    top: -44vh; /* Ensure it's positioned relative to the separator */
-    left: 13.5vw; /* Adjust alignment */
-    text-align: left;
-  }
-  
-  .gcn-tool-item {
-    font-size: 1.1vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 300; /* Lighter font weight */
-    color: #ffffff; /* Adjust color */
-    margin-top: -2.5vh; /* Add spacing from the separator */
-    position: relative; /* Adjust positioning */
-    top: -46vh; /* Ensure it's positioned relative to the separator */
-    left: 23vh; /* Adjust alignment */
-    text-align: left;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
-    border: 2px solid white;
-    border-radius: 50px;
-  }
-  
-  .gcn-backend-item:hover, 
-  .gcn-frontend-item:hover, 
-  .gcn-tool-item:hover {
-    color: rgba(0, 255, 255, 0.6); /* Change background color on hover */
-    border: 2px solid rgba(0, 255, 255, 0.6);
-    transition: color 0.3s ease; /* Smooth transition */
-  }
-  
-  .gcn-bullet-list {
-    font-size: 1.2vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 300; /* Lighter font weight */
-    color: #ffffff; /* Adjust color */
-    margin-top: 20px; /* Add spacing from the separator */
-    text-align: left; /* Center-align the text */
-    position: relative; /* Adjust positioning */
-    top: -50vh; /* Ensure it's positioned relative to the separator */
-    left: 13.5vw; /* Adjust alignment */
-    width: 45vw;
-    list-style: disc;
+}
 
-  }
-  
-  
+/* Flexbox layout: Images on the left, text on the right */
+.gcn-content {
+  display: flex;
+  flex-direction: 'row';
+}
+
+/* Image container */
+.gcn-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 1vw;
+  margin-top: 13vh;
+  gap: 1vh;
+}
+
+.gcn-recording {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  height: auto;
+  border: 5px solid #283353;
+}
+
+/* Text content container */
+.gcn-text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  bottom: 4vw;
+  right: 6vh;
+  top: 5vh;
+  height: 90vh;
+  width: 50vw;
+}
+
+/* Title and description */
+.gcn-title {
+  font-size: 2.5vw;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 255, 255, 0.6);
+  text-align: left;
+}
+
+.gcn-title-separator {
+  width: 100%;
+  max-width: 600px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.gcn-desc {
+  font-size: 1.1vw;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: justify;
+}
+
+/* Individual sections */
+.gcn-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.gcn-backend-title {
+  font-size: 1.4vw;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 255, 255, 0.6);
+  margin-bottom: -1vh;
+}
+
+.gcn-bullet-list {
+  font-size: 1.1vw;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: -1vh;
+}
+
+/* Technology stack */
+.gcn-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 2vh;
+}
+
+.gcn-tool-item {
+  font-size: 1.1vw;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.gcn-tool-item:hover {
+  color: rgba(0, 255, 255, 0.6);
+  border-color: rgba(0, 255, 255, 0.6);
+}

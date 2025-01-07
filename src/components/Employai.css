@@ -1,156 +1,139 @@
+/* Main container */
 .employai-n {
-    position: relative;
-    
-  }
-  
+  position: relative;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Title styling */
+.employai-title {
+  font-size: 2.8vw;
+  font-family: 'Be Vietnam Pro';
+  font-weight: 400;
+  color: rgba(0, 255, 255, 0.6);
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
+/* Title separator */
+.employai-title-separator {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  border-radius: 1px;
+  margin-top: 10px;
+}
+
+/* Video styling */
+.employai-recording {
+  width: 100%;
+  max-width: 35vw;
+  height: auto;
+  border-radius: 10px;
+  border: 10px solid #283353;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Section titles (Backend, Frontend, Tools) */
+.employai-backend-title,
+.employai-frontend-title,
+.employai-tool-title {
+  font-size: 30px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 255, 255, 0.6);
+  text-align: left;
+  margin-bottom: -1vh;
+}
+
+.employai-backend-item,
+.employai-frontend-item,
+.employai-tool-item {
+  font-size: 20px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 5px 50px;
+  border: 2px solid white;
+  border-radius: 50px;
+  text-align: left;
+  transition: color 0.3s ease, border 0.3s ease;
+  margin-bottom: 2vh;
+}
+
+.employai-backend-item:hover,
+.employai-frontend-item:hover,
+.employai-tool-item:hover {
+  color: rgba(0, 255, 255, 0.6);
+  border: 2px solid rgba(0, 255, 255, 0.6);
+}
+
+/* Flexbox layout for bottom content: description and tech stack */
+.employai-bottom {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: row;
+}
+
+
+/* Left half (Description) */
+.employai-desc {
+  flex: 1 1 50%;  /* Takes up 50% of the space */
+  font-size: 1.6rem;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: left;
+  max-width: 30vw; /* Limit max width for better control */
+}
+
+/* Right half (Tech Stack) */
+.employai-tech-stack {
+  flex: 1 1 50%;  /* Takes up the other 50% of the space */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+  margin-top: 20px;
+  max-width: 50vw; /* Limit max width for better control */
+}
+
+/* Ensuring the layout stays in a row even on small screens */
+@media (max-width: 768px) {
   .employai-recording {
-    border-radius: 10px; /* Optional: Add rounded corners */
-    position: relative; /* Ensure it's positioned relative to allow left adjustment */
-    left: 0.5vw; /* Move the video to the left */
-    top: 5vh;
-    border: 10px solid #283353;
+    width: 100%;
   }
-  
+
   .employai-title {
-    font-size: 3vw;
-    font-family: 'Be Vietnam Pro'; /* Use the specified font */
-    font-weight: 400; /* Lighter font weight */
-    color: rgba(0, 255, 255, 0.6); /* Adjust color */
-    position: relative; /* Use relative positioning */
-    top: -50vh; /* Adjust positioning */
-    margin-bottom: -4vh; /* Add "px" to avoid potential issues */
-  
+    font-size: 36px;
   }
-  
-  .employai-title-separator {
-    width: 60vw;
-    height: 1px;
-    background-color: #ffffff; /* White line */
-    border-radius: 1px;
-    font-family: 'Be Vietnam Pro', sans-serif; /* Use the specified font */
-    font-weight: 200; /* Font weight */
-    position: relative; /* Use relative positioning */
-    top: -45vh; /* Adjust positioning */
-    left: 1vw; /* Adjust positioning */
-  }
-  
+
   .employai-desc {
-    font-size: 1.1vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 300; /* Lighter font weight */
-    color: #ffffff; /* Adjust color */
-    margin-top: 2vh; /* Add spacing from the separator */
-    text-align: left; /* Center-align the text */
-    position: relative; /* Adjust positioning */
-    top: 1vh; /* Ensure it's positioned relative to the separator */
-    left: -2vw; /* Adjust alignment */
-    width: 19vw;
+    font-size: 16px;
+    flex: 1 1 100%; /* Take up the full width on smaller screens */
+    margin-bottom: 20px; /* Add margin for spacing */
   }
-  
-  .employai-backend-title {
-    font-size: 1.8vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 400; /* Lighter font weight */
-    color: rgba(0, 255, 255, 0.6); /* Adjust color */
-    margin-top: 2vh; /* Add spacing from the separator */
-    text-align: center; /* Center-align the text */
-    position: relative; /* Adjust positioning */
-    top: -29vh; /* Ensure it's positioned relative to the separator */
-    left: 20.5vw; /* Adjust alignment */
-    text-align: left;
-  }
-  
-  .employai-tech-stack {
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-  }
-  
-  .employai-backend-item {
-    font-size: 1.2vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 300; /* Lighter font weight */
-    color: #ffffff; /* Adjust color */
-    margin-top: 20px; /* Add spacing from the separator */
-    position: relative; /* Adjust positioning */
-    top: -30vh; /* Ensure it's positioned relative to the separator */
-    left: 20.5vw; /* Adjust alignment */
-    text-align: left;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 0.3vh;
-    padding-bottom: 0.3vh;
-    border: 2px solid white;
-    border-radius: 50px;
-  }
-  
-  .employai-frontend-title {
-    font-size: 1.8vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 400; /* Lighter font weight */
-    color: rgba(0, 255, 255, 0.6); /* Adjust color */
-    margin-top: 20px; /* Add spacing from the separator */
-    text-align: center; /* Center-align the text */
-    position: relative; /* Adjust positioning */
-    top: -17vw; /* Ensure it's positioned relative to the separator */
-    left: 20.5vw; /* Adjust alignment */
-    text-align: left;
-  }
-  
-  .employai-frontend-item {
-    font-size: 1.2vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 300; /* Lighter font weight */
-    color: #ffffff; /* Adjust color */
-    margin-top: -30px; /* Add spacing from the separator */
-    position: relative; /* Adjust positioning */
-    top: -15vw; /* Ensure it's positioned relative to the separator */
-    left: 20.5vw; /* Adjust alignment */
-    text-align: left;
-    padding-left:3vw;
-    padding-right: 3vw;
-    padding-top: 0.3vw;
-    padding-bottom: 0.3vw;
-    border: 2px solid white;
-    border-radius: 50px;
-  }
-  
+
+  .employai-backend-title,
+  .employai-frontend-title,
   .employai-tool-title {
-    font-size: 1.8vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 400; /* Lighter font weight */
-    color: rgba(0, 255, 255, 0.6); /* Adjust color */
-    margin-top: 20px; /* Add spacing from the separator */
-    text-align: center; /* Center-align the text */
-    position: relative; /* Adjust positioning */
-    top: -15vw; /* Ensure it's positioned relative to the separator */
-    left: 20.5vw; /* Adjust alignment */
-    text-align: left;
+    font-size: 24px;
   }
-  
+
+  .employai-backend-item,
+  .employai-frontend-item,
   .employai-tool-item {
-    font-size: 1.2vw; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 300; /* Lighter font weight */
-    color: #ffffff; /* Adjust color */
-    margin-top: -30px; /* Add spacing from the separator */
-    position: relative; /* Adjust positioning */
-    top: -13vw; /* Ensure it's positioned relative to the separator */
-    left: 20.5vw; /* Adjust alignment */
-    text-align: left;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 0.3vh;
-    padding-bottom: 0.3vh;
-    border: 2px solid white;
-    border-radius: 50px;
+    font-size: 16px;
+    padding: 5px 20px;
   }
-  
-  .employai-backend-item:hover, 
-  .employai-frontend-item:hover, 
-  .employai-tool-item:hover {
-    color: rgba(0, 255, 255, 0.6); /* Change background color on hover */
-    border: 2px solid rgba(0, 255, 255, 0.6);
-    transition: color 0.3s ease; /* Smooth transition */
+
+  .employai-bottom {
+    flex-wrap: wrap;
+    flex-direction: column; /* Stack vertically on small screens */
   }
-  
+}

@@ -127,42 +127,45 @@ function App() {
             CO '25 Chemical Engineering & Computer Science Student @ Northeastern University
           </p>
         </div>  }
-
-        {!isSubtabActive && 
         
-        <div style={{ marginTop: '5vh' }}>
-          <a 
-            href="https://github.com/ihysi2024" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <i 
-              className="fab fa-github" 
-              style={{ fontSize: '4vw', color: 'white', padding: '4vw' }}
-            ></i>
-          </a>
-          <a 
-            href="https://www.linkedin.com/in/ira-hysi-93a0261b0/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <i 
-              className="fab fa-linkedin" 
-              style={{ fontSize: '4vw', color: 'white', padding: '4vw' }}
-            ></i>
-          </a>
-          <Link to="/Hysi_Resume_Jan2025.pdf" target="_blank" rel="noopener noreferrer">
-            <i className="fas fa-file-alt" style={{ fontSize: '4vw', color: 'white', padding: '4vw' }}></i>
-          </Link>
-        </div> 
-        }
+        <div style={{ marginTop: '5vh', cursor: 'pointer', zIndex: 2 }}>
+        <a 
+          href="https://github.com/ihysi2024" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <i 
+            className="fab fa-github" 
+            style={{ fontSize: '4vw', color: 'white', padding: '4vw'}}
+          ></i>
+        </a>
+        <a 
+          href="https://www.linkedin.com/in/ira-hysi-93a0261b0/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <i 
+            className="fab fa-linkedin" 
+            style={{ fontSize: '4vw', color: 'white', padding: '4vw' }}
+          ></i>
+        </a>
+        <a 
+          href="/Hysi_Resume_Jan2025.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <i className="fas fa-file-alt" style={{ fontSize: '4vw', color: 'white', padding: '4vw' }}></i>
+        </a>
+      </div>
+        
       </header>
 
       {/* Gray Rectangle */}
       <div 
       className="rectangle" 
       style={{
-          height: isSubtabActive ? '90vh' : '65vh', // Adjust height based on subtab state
+          height: isSubtabActive ? '90vh' : '65vh', 
+          top: isSubtabActive ?  '5vh' : '30vh',// Adjust height based on subtab state
           transition: 'height 0.5s ease',
         }}>
       </div>
@@ -181,32 +184,32 @@ function App() {
       )}
 
       {tab == "nightlife" && 
-          <div className="about-container">
+          <div className="all-projects-container">
           <Nightlife/>
         </div>}
 
         {tab == "taskmaster" && 
-          <div className="about-container">
+          <div className="all-projects-container">
           <TaskMaster/>
         </div>}
 
         {tab == "employai" && 
-          <div className="about-container">
+          <div className="all-projects-container">
           <EmployAI/>
         </div>}
 
         {tab == "pantry" && 
-          <div className="about-container">
+          <div className="all-projects-container">
           <Pantry/>
         </div>}
 
         {tab == "gnn" && 
-          <div className="about-container">
+          <div className="all-projects-container">
           <GCN />
         </div>}
     
         {tab == "contact" && 
-          <div className="about-container">
+          <div className="all-projects-container">
           <Contact />
         </div>}
     </div>

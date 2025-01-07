@@ -65,33 +65,34 @@
   
   /* Screenshots specific styles */
   .nightlife {
-    width: 160%;
-    transform: translate(-75%, 40%); /* Move down and left */
+    width: 15.5vw;
+    transform: translate(-14vw, 28vh); /* Move down and left */
     position: relative;
   }
   
   .taskmaster {
-    width: 150%;
-    transform: translate(265%, -70%); /* Move up and to the right */
+    width: 16vw;
+    transform: translate(41.5vw, -32vh); /* Move up and to the right */
     position: relative;
   }
   
   .employai {
-    width: 355%;
-    transform: translate(-19%, 72%); /* Move down and left */
+    width: 38vw;
+    transform: translate(-8.4vw, 28vh); /* Move down and left */
     position: relative;
   }
   
   .pantry {
-    width: 160%;
-    transform: translate(-89%, 350%); /* Positioned under EmployAI */
+    width: 16.5vw;
+    transform: translate(-15.6vw, 62vh); /* Positioned under EmployAI */
     position: relative;
     scale: 1.15;
   }
   
   .gnn {
-    width: 150%;
-    transform: translate(-55%, 350%); /* Positioned under EmployAI, side by side with Pantry */
+    width: 16.7vw;
+    height:18.5vh;
+    transform: translate(-8.8vw, 64.5vh); /* Positioned under EmployAI, side by side with Pantry */
     position: relative;
     scale: 1.1;
   }

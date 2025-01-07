@@ -72,6 +72,7 @@
   position: absolute;
   bottom: 4vw;
   right: 6vh;
+  top: 30vh;
   z-index: 1;
 }
 
@@ -79,6 +80,7 @@
   position: absolute;
   bottom: 4vw;
   right: 6vh;
+  top: 30vh;
   width: 75vw; /* Adjust to desired width */
   height: 65vh; /* Adjust to desired height */
   z-index: 2; /* Render above the rectangle */
@@ -88,6 +90,19 @@
   color: white;
 }
 
+.all-projects-container {
+  width: 75vw; /* Adjust to desired width */
+  height: 90vh;
+  position: absolute;
+  bottom: 4vw;
+  right: 6vh;
+  top: 5vh;
+  z-index: 2; /* Render above the rectangle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
 .big-tab {
   font-weight: 400;

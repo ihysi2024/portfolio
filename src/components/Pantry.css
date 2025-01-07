@@ -1,159 +1,135 @@
+/* Main container */
 .pantry-n {
-    position: relative;
-  }
-  
+  position: relative;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Title styling */
+.pantry-title {
+  font-size: 2.8vw;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 255, 255, 0.6);
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
+/* Title separator */
+.pantry-title-separator {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  border-radius: 1px;
+  margin-top: 10px;
+}
+
+/* Video styling */
+.pantry-recording {
+  width: 100%;
+  max-width: 35vw;
+  height: auto;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  border: 10px solid #283353;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Flexbox layout for bottom content: description and tech stack */
+.pantry-bottom {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: row;
+}
+
+/* Left half (Description) */
+.pantry-description {
+  flex: 1 1 50%;  /* Takes up 50% of the space */
+  font-size: 1.6rem;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: left;
+  max-width: 30vw; /* Limit max width for better control */
+}
+
+/* Right half (Tech Stack) */
+.pantry-tech-stack {
+  flex: 1 1 50%;  /* Takes up the other 50% of the space */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+  margin-top: 20px;
+  max-width: 50vw; /* Limit max width for better control */
+}
+
+/* Section titles (Backend, Frontend, Tools) */
+.pantry-backend-title,
+.pantry-frontend-title,
+.pantry-tool-title {
+  font-size: 30px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 255, 255, 0.6);
+  text-align: left;
+  margin-bottom: -1vh;
+}
+
+.pantry-backend-item,
+.pantry-frontend-item,
+.pantry-tool-item {
+  font-size: 20px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 5px 50px;
+  border: 2px solid white;
+  border-radius: 50px;
+  text-align: left;
+  transition: color 0.3s ease, border 0.3s ease;
+  margin-bottom: 2vh;
+}
+
+.pantry-backend-item:hover,
+.pantry-frontend-item:hover,
+.pantry-tool-item:hover {
+  color: rgba(0, 255, 255, 0.6);
+  border: 2px solid rgba(0, 255, 255, 0.6);
+}
+
+/* Ensuring the layout stays in a row even on small screens */
+@media (max-width: 768px) {
   .pantry-recording {
-    border-radius: 10px; /* Optional: Add rounded corners */
-    position: relative; /* Ensure it's positioned relative to allow left adjustment */
-    left: 10px; /* Move the video to the left */
-    top: 10px;
-    border: 10px solid #283353;
-    
+    width: 100%;
   }
-  
+
   .pantry-title {
-    font-size: 48px;
-    font-family: 'Be Vietnam Pro'; /* Use the specified font */
-    font-weight: 400; /* Lighter font weight */
-    color: rgba(0, 255, 255, 0.6); /* Adjust color */
-    position: relative; /* Use relative positioning */
-    top: -550px; /* Adjust positioning */
-    left: 20px; /* Adjust positioning */
-    margin-bottom: -40px; /* Add "px" to avoid potential issues */
-  
+    font-size: 36px;
   }
-  
-  .pantry-title-separator {
-    width: 900px;
-    height: 1px;
-    background-color: #ffffff; /* White line */
-    border-radius: 1px;
-    font-family: 'Be Vietnam Pro', sans-serif; /* Use the specified font */
-    font-weight: 200; /* Font weight */
-    position: relative; /* Use relative positioning */
-    top: -500px; /* Adjust positioning */
-    left: 10px; /* Adjust positioning */
+
+  .pantry-description {
+    font-size: 16px;
   }
-  
-  .pantry-desc {
-    font-size: 20px; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 300; /* Lighter font weight */
-    color: #ffffff; /* Adjust color */
-    margin-top: 20px; /* Add spacing from the separator */
-    text-align: left; /* Center-align the text */
-    position: relative; /* Adjust positioning */
-    top: 20px; /* Ensure it's positioned relative to the separator */
-    left: -20px; /* Adjust alignment */
-    width: 350px;
-  }
-  
-  .pantry-backend-title {
-    font-size: 30px; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 400; /* Lighter font weight */
-    color: rgba(0, 255, 255, 0.6); /* Adjust color */
-    margin-top: 20px; /* Add spacing from the separator */
-    text-align: center; /* Center-align the text */
-    position: relative; /* Adjust positioning */
-    top: -240px; /* Ensure it's positioned relative to the separator */
-    left: 400px; /* Adjust alignment */
-    text-align: left;
-  }
-  
-  .pantry-tech-stack {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-  
-  .pantry-backend-item {
-    font-size: 20px; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 300; /* Lighter font weight */
-    color: #ffffff; /* Adjust color */
-    margin-top: 20px; /* Add spacing from the separator */
-    position: relative; /* Adjust positioning */
-    top: -250px; /* Ensure it's positioned relative to the separator */
-    left: 400px; /* Adjust alignment */
-    text-align: left;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 2px solid white;
-    border-radius: 50px;
-  }
-  
-  .pantry-frontend-title {
-    font-size: 30px; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 400; /* Lighter font weight */
-    color: rgba(0, 255, 255, 0.6); /* Adjust color */
-    margin-top: 20px; /* Add spacing from the separator */
-    text-align: center; /* Center-align the text */
-    position: relative; /* Adjust positioning */
-    top: -250px; /* Ensure it's positioned relative to the separator */
-    left: 400px; /* Adjust alignment */
-    text-align: left;
-  }
-  
-  
-  
-  .pantry-frontend-item {
-    font-size: 20px; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 300; /* Lighter font weight */
-    color: #ffffff; /* Adjust color */
-    margin-top: -30px; /* Add spacing from the separator */
-    position: relative; /* Adjust positioning */
-    top: -210px; /* Ensure it's positioned relative to the separator */
-    left: 400px; /* Adjust alignment */
-    text-align: left;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 2px solid white;
-    border-radius: 50px;
-  }
-  
+
+  .pantry-backend-title,
+  .pantry-frontend-title,
   .pantry-tool-title {
-    font-size: 30px; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 400; /* Lighter font weight */
-    color: rgba(0, 255, 255, 0.6); /* Adjust color */
-    margin-top: 20px; /* Add spacing from the separator */
-    text-align: center; /* Center-align the text */
-    position: relative; /* Adjust positioning */
-    top: -210px; /* Ensure it's positioned relative to the separator */
-    left: 400px; /* Adjust alignment */
-    text-align: left;
+    font-size: 24px;
   }
-  
+
+  .pantry-backend-item,
+  .pantry-frontend-item,
   .pantry-tool-item {
-    font-size: 20px; /* Adjust as needed */
-    font-family: 'Be Vietnam Pro', sans-serif; /* Ensure font consistency */
-    font-weight: 300; /* Lighter font weight */
-    color: #ffffff; /* Adjust color */
-    margin-top: -30px; /* Add spacing from the separator */
-    position: relative; /* Adjust positioning */
-    top: -170px; /* Ensure it's positioned relative to the separator */
-    left: 400px; /* Adjust alignment */
-    text-align: left;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 2px solid white;
-    border-radius: 50px;
+    font-size: 16px;
+    padding: 5px 20px;
   }
-  
-  .backend-item:hover, 
-  .frontend-item:hover, 
-  .tool-item:hover {
-    color: rgba(0, 255, 255, 0.6); /* Change background color on hover */
-    border: 2px solid rgba(0, 255, 255, 0.6);
-    transition: color 0.3s ease; /* Smooth transition */
+
+  .pantry-bottom {
+    flex-wrap: wrap; /* Allows wrapping of content on smaller screens */
   }
-  
+}
