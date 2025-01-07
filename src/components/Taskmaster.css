@@ -76,11 +76,11 @@
 .taskmaster-backend-title,
 .taskmaster-frontend-title,
 .taskmaster-tool-title {
-  font-size: 1.8rem;
+  font-size: 1.8vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
   color: rgba(0, 255, 255, 0.6);
-  margin-top: 1rem;
+  margin-top: 1vh;
   text-align: left;
 }
 
@@ -96,7 +96,7 @@
 .taskmaster-backend-item,
 .taskmaster-frontend-item,
 .taskmaster-tool-item {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 300;
   color: #ffffff;

@@ -42,7 +42,6 @@
   flex-direction: column;
   bottom: 4vw;
   right: 6vh;
-  top: 5vh;
   height: 100%;
 }
 
@@ -53,11 +52,12 @@
   font-weight: 400;
   color: rgba(0, 255, 255, 0.6);
   text-align: left;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .gcn-title-separator {
-  width: 100%;
-  max-width: 600px;
+  max-width: 40vw;
   height: 1px;
   background-color: #ffffff;
 }
@@ -69,7 +69,7 @@
   color: #ffffff;
   text-align: justify;
   width: 40vw;
-  
+  margin-bottom: 1%;
 }
 
 /* Individual sections */

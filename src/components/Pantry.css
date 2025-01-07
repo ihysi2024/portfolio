@@ -50,7 +50,7 @@
 /* Left half (Description) */
 .pantry-description {
   flex: 1 1 50%;  /* Takes up 50% of the space */
-  font-size: 1.6rem;
+  font-size: 1.6vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 300;
   color: #ffffff;
@@ -73,7 +73,7 @@
 .pantry-backend-title,
 .pantry-frontend-title,
 .pantry-tool-title {
-  font-size: 30px;
+  font-size: 1.8vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
   color: rgba(0, 255, 255, 0.6);
@@ -84,7 +84,7 @@
 .pantry-backend-item,
 .pantry-frontend-item,
 .pantry-tool-item {
-  font-size: 20px;
+  font-size: 1.6vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 300;
   color: #ffffff;

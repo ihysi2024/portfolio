@@ -41,7 +41,7 @@
 .employai-backend-title,
 .employai-frontend-title,
 .employai-tool-title {
-  font-size: 30px;
+  font-size: 1.8vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
   color: rgba(0, 255, 255, 0.6);
@@ -52,7 +52,7 @@
 .employai-backend-item,
 .employai-frontend-item,
 .employai-tool-item {
-  font-size: 20px;
+  font-size: 1.3vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 300;
   color: #ffffff;
@@ -85,12 +85,12 @@
 /* Left half (Description) */
 .employai-desc {
   flex: 1 1 50%;  /* Takes up 50% of the space */
-  font-size: 1.6rem;
+  font-size: 1.6vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 300;
   color: #ffffff;
   text-align: left;
-  max-width: 600px; /* Limit max width for better control */
+  max-width: 60vw; /* Limit max width for better control */
 }
 
 /* Right half (Tech Stack) */

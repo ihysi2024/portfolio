@@ -73,31 +73,31 @@
   
   .taskmaster {
     width: 28vh;
-    left: -35%;
-    top: 10%;
+    left: -28%;
+    top: 12%;
     position: relative;
   }
   
   .employai {
-    width: 61vh;
-    left: 30%;
+    width: 67vh;
+    left: 25%;
     top: 5%;
     position: relative;
   }
   
   .pantry {
-    width: 17vw;
+    width:33vh;
     height:21vh;
-    left: -78%;
-    top: 60%;
+    left: -83%;
+    top: 63%;
     position: relative;
   }
   
   .gnn {
-    width: 17vw;
+    width: 33vh;
     height:21vh;
-    left: -59%;
-    top: 60%;
+    left: -58%;
+    top: 63%;
     position: relative;
   }
   
