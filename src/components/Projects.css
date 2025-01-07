@@ -65,38 +65,39 @@
   
   /* Screenshots specific styles */
   .nightlife {
-    width: 28vh;
+    width: 29vh;
     position: relative;
-    left: 15%;
+    left: 10%;
     top: 5%;
   }
   
   .taskmaster {
     width: 28vh;
-    left: -28%;
+    left: -26%;
     top: 12%;
     position: relative;
   }
   
   .employai {
-    width: 67vh;
+    width: 66vh;
     left: 25%;
     top: 5%;
     position: relative;
   }
   
   .pantry {
-    width:33vh;
+    width:32vh;
     height:21vh;
     left: -83%;
     top: 63%;
+    padding-left: 1%;
     position: relative;
   }
   
   .gnn {
-    width: 33vh;
+    width: 32vh;
     height:21vh;
-    left: -61%;
+    left: -54%;
     top: 63%;
     position: relative;
   }
