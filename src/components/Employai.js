@@ -28,7 +28,7 @@ function EmployAI() {
 
         {/* Tech Stack */}
         <div>
-          <div>
+          <div style={{width: '40vw'}}>
             <div className="employai-backend-title">Backend</div>
             <div className="employai-tech-stack">
               <div className="employai-backend-item">Javascript</div>

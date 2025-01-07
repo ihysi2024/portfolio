@@ -89,7 +89,7 @@
   font-weight: 300;
   color: #ffffff;
   text-align: left;
-  max-width: 30vw; /* Limit max width for better control */
+  max-width: 600px; /* Limit max width for better control */
 }
 
 /* Right half (Tech Stack) */

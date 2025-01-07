@@ -1,5 +1,5 @@
 .projects-container {
-    width: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,8 +9,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
     gap: 20px;
-    width: 90%; /* Adjust container width */
-    max-width: 800px; /* Limit max width */
+    width: 75vw;
+    height: 65vh;
     position: relative; /* For precise positioning */
   }
   
@@ -65,35 +65,39 @@
   
   /* Screenshots specific styles */
   .nightlife {
-    width: 15.5vw;
-    transform: translate(-14vw, 28vh); /* Move down and left */
+    width: 16vw;
     position: relative;
+    left: 15%;
+    top: 5%;
   }
   
   .taskmaster {
-    width: 16vw;
-    transform: translate(41.5vw, -32vh); /* Move up and to the right */
+    width: 17vw;
+    left: -35%;
+    top: 10%;
     position: relative;
   }
   
   .employai {
-    width: 38vw;
-    transform: translate(-8.4vw, 28vh); /* Move down and left */
+    width: 35vw;
+    left: 30%;
+    top: 5%;
     position: relative;
   }
   
   .pantry {
-    width: 16.5vw;
-    transform: translate(-15.6vw, 62vh); /* Positioned under EmployAI */
+    width: 17vw;
+    height:12vw;
+    left: -78%;
+    top: 60%;
     position: relative;
-    scale: 1.15;
   }
   
   .gnn {
-    width: 16.7vw;
-    height:18.5vh;
-    transform: translate(-8.8vw, 64.5vh); /* Positioned under EmployAI, side by side with Pantry */
+    width: 17vw;
+    height:12vw;
+    left: -59%;
+    top: 60%;
     position: relative;
-    scale: 1.1;
   }
   
