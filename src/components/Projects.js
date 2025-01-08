@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "./Projects.css"; // Import updated CSS
+import "./Projects.css"; 
 
-// Import screenshots
 import Nightlife from "../assets/nightlife_ss.png";
 import EmployAI from "../assets/employ_ai.ss.png";
 import TaskMaster from "../assets/taskmaster_ss.png";

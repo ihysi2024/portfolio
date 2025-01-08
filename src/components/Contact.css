@@ -15,7 +15,7 @@
     text-align: center;
     margin-bottom: 2vh;
     color: white;
-    font-family: 'Be Vietnam Pro'; /* Use the specified font */
+    font-family: 'Be Vietnam Pro'; 
     font-weight: 400;
   }
   
@@ -23,7 +23,7 @@
     color: #90E5E2;
     text-align: center;
     margin-bottom: 1vh;
-    font-family: 'Be Vietnam Pro'; /* Use the specified font */
+    font-family: 'Be Vietnam Pro'; 
     font-weight: 400;
   }
   
@@ -31,7 +31,7 @@
     color: red;
     text-align: center;
     margin-bottom: 1vh;
-    font-family: 'Be Vietnam Pro'; /* Use the specified font */
+    font-family: 'Be Vietnam Pro'; 
     font-weight: 400;
   }
   
@@ -40,7 +40,7 @@
     margin-top: 1vh;
     font-weight: bold;
     color: white;
-    font-family: 'Be Vietnam Pro'; /* Use the specified font */
+    font-family: 'Be Vietnam Pro'; 
     font-weight: 400;
     font-size: 1.2vw;
   }
@@ -68,7 +68,7 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    font-family: 'Be Vietnam Pro'; /* Use the specified font */
+    font-family: 'Be Vietnam Pro'; 
     font-weight: 400;
     font-size: 1.2vw;
 

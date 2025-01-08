@@ -6,19 +6,18 @@ function About() {
     <div style={{
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'flex-start',  // Align items at the top
-      alignItems: 'center',  // Center horizontally
+      justifyContent: 'flex-start',  
+      alignItems: 'center', 
       fontFamily: 'Be Vietnam Pro',
       fontWeight: '200',
       fontSize: '1.2vw',
       width: '100%',
-      maxWidth: '80vw',  // Limit width for large screens
+      maxWidth: '80vw',  
       marginLeft: 'auto',
       marginRight: 'auto',
-      padding: '5vw', // Add padding to ensure content is not stuck to the edges
-      height: '60vh',  // Ensure the container takes full height of the viewport
+      padding: '5vw', 
+      height: '60vh',  
     }}>
-      {/* Text content above the timeline */}
       <p style={{ paddingTop: '1vw'}}>
         I started Northeastern University as a Chemical Engineering major but quickly discovered my love for Computer Science
         after taking Introduction to Machine Learning and seeing the innovative ways AI/ML can be used to push medical advancement forward.
@@ -26,7 +25,6 @@ function About() {
         through a combination of various internships, fellowships, and technical club projects.
       </p>
       
-      {/* Timeline component below the text */}
       <Timeline /> 
     </div>
   );

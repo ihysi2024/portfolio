@@ -1,12 +1,10 @@
 import nightlife_video from "../assets/nightlife_recording.mov";
-import './Nightlife.css'; // Import the CSS file
+import './Nightlife.css'; 
 
 function Nightlife() {
     return (
       <div className="nightlife-container">
-        {/* Main Content */}
         <div className="nightlife-content">
-          {/* Video */}
           <video 
             className="nightlife-recording"
             src={nightlife_video}
@@ -16,9 +14,7 @@ function Nightlife() {
             controls
           />
 
-          {/* Text Content */}
           <div className="nightlife-text">
-            {/* Title */}
             <h1 className="nightlife-title">Nightlife</h1>
             <div className="nightlife-title-separator"></div>
             <div className="nightlife-desc">
@@ -26,7 +22,6 @@ function Nightlife() {
               This app takes into account a user's nightlife preferences relative to music, exclusivity, pricing, and venue atmosphere to ensure an enjoyable user going-out experience. 
             </div>
 
-            {/* Backend Section */}
             <h2 className="nightlife-backend-title">Backend</h2>
             <div className="nightlife-tech-stack">
               <div className="nightlife-backend-item">Go</div>
@@ -34,7 +29,6 @@ function Nightlife() {
               <div className="nightlife-backend-item">Supabase</div>
             </div>
 
-            {/* Frontend Section */}
             <h2 className="nightlife-frontend-title">Frontend</h2>
             <div className="nightlife-tech-stack">
               <div className="nightlife-frontend-item">React Native</div>
@@ -42,7 +36,6 @@ function Nightlife() {
               <div className="nightlife-frontend-item">CSS Style Sheets</div>
             </div>
 
-            {/* Tools Section */}
             <h2 className="nightlife-tool-title">Tools</h2>
             <div className="nightlife-tech-stack">
               <div className="nightlife-tool-item">Expo</div>

@@ -1,12 +1,10 @@
 import taskmaster_video from "../assets/taskmaster_video.mp4";
-import './Taskmaster.css'; // Import the CSS file
+import './Taskmaster.css'; 
 
 function TaskMaster() {
     return (
       <div className="taskmaster-container">
-        {/* Main Content */}
         <div className="taskmaster-content">
-          {/* Video */}
           <video 
             className="taskmaster-recording"
             src={taskmaster_video}
@@ -15,10 +13,7 @@ function TaskMaster() {
             loop
             controls
           />
-
-          {/* Text Content */}
           <div className="taskmaster-text">
-            {/* Title */}
             <h1 className="taskmaster-title">Taskmaster</h1>
             <div className="taskmaster-title-separator"></div>
             <div className="taskmaster-desc">
@@ -26,7 +21,6 @@ function TaskMaster() {
               respective descriptions, due dates, and priority rankings, and be reminded when tasks have upcoming or overdue deadlines.
             </div>
 
-            {/* Backend Section */}
             <h2 className="taskmaster-backend-title">Backend</h2>
             <div className="taskmaster-tech-stack">
               <div className="taskmaster-backend-item">Java</div>
@@ -34,14 +28,12 @@ function TaskMaster() {
               <div className="taskmaster-backend-item">GCP</div>
             </div>
 
-            {/* Frontend Section */}
             <h2 className="taskmaster-frontend-title">Frontend</h2>
             <div className="taskmaster-tech-stack">
               <div className="taskmaster-frontend-item">XML Layout</div>
               <div className="taskmaster-frontend-item">Android Studio</div>
             </div>
 
-            {/* Tools Section */}
             <h2 className="taskmaster-tool-title">Tools</h2>
             <div className="taskmaster-tech-stack">
               <div className="taskmaster-tool-item">Gradle</div>

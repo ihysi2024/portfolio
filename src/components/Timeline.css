@@ -1,38 +1,36 @@
-/* Timeline Container */
+
 .timeline-container {
   display: flex;
   justify-content: center;
   padding: 50px;
   width: 75vw;
   background-color: transparent;
-  position: absolute; /* Enable absolute positioning */
-  top: 30%; /* Distance from the bottom of the screen */
+  position: absolute; 
+  top: 30%; 
   bottom: 1%;
 }
 
 .timeline {
-  display: flex; /* Flexbox for horizontal layout */
-  align-items: center; /* Vertically align events */
+  display: flex; 
+  align-items: center; 
   position: relative;
   justify-content: center;
   align-content: center;
   gap: 5vw;
 }
 
-/* Event Boxes */
 .timeline-event {
   display: flex;
-  flex-direction: column; /* Stack content vertically */
+  flex-direction: column; 
   align-items: center;
   position: relative;
   max-width: 13vw;
   max-height: 40vh;
-  opacity: 0; /* Initially invisible */
-  animation: fadeInUp 0.8s ease-out forwards; /* Fade-in and slide-up animation */
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Longer and smoother transition */
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards; 
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-/* Add delay for each event to stagger the animations */
 .timeline-event:nth-child(1) {
   animation-delay: 0.2s;
 }
@@ -46,29 +44,26 @@
   animation-delay: 0.8s;
 }
 
-/* Fade-in and slide-up animation */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(30px); /* Start below */
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* End at the original position */
+    transform: translateY(0); 
   }
 }
 
-/* Timeline Marker */
 .timeline-marker {
-  width: 20px; /* Adjust size */
+  width: 20px; 
   height: 20px;
   border-radius: 50%;
-  background-color: #90E5E2; /* Customize the color */
+  background-color: #90E5E2; 
   border: 3px solid white;
-  margin-bottom: 10px; /* Add space between the marker and the content */
+  margin-bottom: 10px; 
 }
 
-/* Timeline Content */
 .timeline-content {
   padding: 15px;
   background-color: #f4f4f4;
@@ -104,18 +99,16 @@
   color: #666;
 }
 
-/* Line Separator Below Events */
 .timeline-line {
   content: '';
   position: absolute;
-  width: 75vw; /* Full width of the timeline container */
-  height: 2px; /* Line thickness */
-  background-color: #90E5E2; /* Line color */
-  z-index: -1; /* Ensure the line is behind the events */
+  width: 75vw; 
+  height: 2px; 
+  background-color: #90E5E2; 
+  z-index: -1; 
   bottom: 50%;
 }
 
-/* Event Hover Effect */
 .timeline-event:hover {
-  transform: translateY(-20px); /* Move the event up slightly */
+  transform: translateY(-20px); 
 }

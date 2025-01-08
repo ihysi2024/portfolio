@@ -1,4 +1,3 @@
-/* Main container */
 .employai-n {
   position: relative;
   margin: 0 auto;
@@ -7,7 +6,7 @@
   height:90vh;
 }
 
-/* Title styling */
+
 .employai-title {
   font-size: 2.8vw;
   font-family: 'Be Vietnam Pro';
@@ -17,7 +16,6 @@
   margin-bottom: 1vh;
 }
 
-/* Title separator */
 .employai-title-separator {
   width: 100%;
   height: 1px;
@@ -26,7 +24,6 @@
   margin-top: 1%;
 }
 
-/* Video styling */
 .employai-recording {
   width: 100%;
   max-width: 35vw;
@@ -37,7 +34,6 @@
   margin-top: 1rem;
 }
 
-/* Section titles (Backend, Frontend, Tools) */
 .employai-backend-title,
 .employai-frontend-title,
 .employai-tool-title {
@@ -71,7 +67,6 @@
   border: 2px solid rgba(0, 255, 255, 0.6);
 }
 
-/* Flexbox layout for bottom content: description and tech stack */
 .employai-bottom {
   display: flex;
   gap: 2rem;
@@ -82,29 +77,26 @@
 }
 
 
-/* Left half (Description) */
 .employai-desc {
-  flex: 1 1 50%;  /* Takes up 50% of the space */
+  flex: 1 1 50%;  
   font-size: 1.6vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 300;
   color: #ffffff;
   text-align: left;
-  max-width: 60vw; /* Limit max width for better control */
+  max-width: 60vw; 
 }
 
-/* Right half (Tech Stack) */
 .employai-tech-stack {
-  flex: 1 1 50%;  /* Takes up the other 50% of the space */
+  flex: 1 1 50%;  
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: left;
   margin-top: 20px;
-  max-width: 50vw; /* Limit max width for better control */
+  max-width: 50vw; 
 }
 
-/* Ensuring the layout stays in a row even on small screens */
 @media (max-width: 768px) {
   .employai-recording {
     width: 100%;
@@ -116,8 +108,8 @@
 
   .employai-desc {
     font-size: 16px;
-    flex: 1 1 100%; /* Take up the full width on smaller screens */
-    margin-bottom: 20px; /* Add margin for spacing */
+    flex: 1 1 100%; 
+    margin-bottom: 20px; 
   }
 
   .employai-backend-title,
@@ -135,6 +127,6 @@
 
   .employai-bottom {
     flex-wrap: wrap;
-    flex-direction: column; /* Stack vertically on small screens */
+    flex-direction: column; 
   }
 }

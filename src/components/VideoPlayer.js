@@ -1,5 +1,5 @@
 import React from 'react';
-import './VideoPlayer.css'; // Import the updated styles
+import './VideoPlayer.css'; 
 
 function VideoPlayer({ videoPath, width = "100%", height = "auto" }) {
   return (

@@ -7,11 +7,11 @@
   
   .screenshot-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
     gap: 20px;
     width: 75vw;
     height: 65vh;
-    position: relative; /* For precise positioning */
+    position: relative; 
   }
   
   .screenshot {
@@ -23,11 +23,10 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform-origin: center;
-    opacity: 0; /* Initially invisible */
-    animation: fadeInUp 0.8s ease-out forwards; /* Animation for fading and sliding up */
+    opacity: 0; 
+    animation: fadeInUp 0.8s ease-out forwards; 
   }
   
-  /* Add delay for each screenshot to stagger the animation */
   .nightlife {
     animation-delay: 0.2s;
   }
@@ -44,7 +43,6 @@
     animation-delay: 1s;
   }
   
-  /* Fade-in and slide-up animation */
   @keyframes fadeInUp {
     0% {
       opacity: 0;
@@ -56,14 +54,12 @@
     }
   }
   
-  /* Hover enlarge effect */
   .screenshot.lift {
-    box-shadow: 0px 0px 50px rgba(0, 255, 255, 0.6); /* Glowing outline */
-    border-color: rgba(0, 255, 255, 0.6); /* Optional: change border color to match the glow */
-    z-index: 1; /* Bring the hovered element to the front */
+    box-shadow: 0px 0px 50px rgba(0, 255, 255, 0.6); 
+    border-color: rgba(0, 255, 255, 0.6); 
+    z-index: 1; 
   }
   
-  /* Screenshots specific styles */
   .nightlife {
     width: 29vh;
     position: relative;

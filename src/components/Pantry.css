@@ -1,4 +1,3 @@
-/* Main container */
 .pantry-n {
   position: relative;
   margin: 0 auto;
@@ -7,7 +6,6 @@
   height:90vh;
 }
 
-/* Title styling */
 .pantry-title {
   font-size: 2.8vw;
   font-family: 'Be Vietnam Pro', sans-serif;
@@ -17,7 +15,6 @@
   margin-bottom: 1vh;
 }
 
-/* Title separator */
 .pantry-title-separator {
   width: 100%;
   height: 1px;
@@ -26,18 +23,16 @@
   margin-top: 1hv;
 }
 
-/* Video styling */
 .pantry-recording {
   width: 100%;
   max-width: 35vw;
   height: auto;
-  border-radius: 10px; /* Optional: Add rounded corners */
+  border-radius: 10px;
   border: 10px solid #283353;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
 }
 
-/* Flexbox layout for bottom content: description and tech stack */
 .pantry-bottom {
   display: flex;
   gap: 2rem;
@@ -47,29 +42,26 @@
   flex-direction: row;
 }
 
-/* Left half (Description) */
 .pantry-description {
-  flex: 1 1 50%;  /* Takes up 50% of the space */
+  flex: 1 1 50%;  
   font-size: 1.6vw;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 300;
   color: #ffffff;
   text-align: left;
-  max-width: 30vw; /* Limit max width for better control */
+  max-width: 30vw; 
 }
 
-/* Right half (Tech Stack) */
 .pantry-tech-stack {
-  flex: 1 1 50%;  /* Takes up the other 50% of the space */
+  flex: 1 1 50%;  
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: left;
   margin-top: 20px;
-  max-width: 50vw; /* Limit max width for better control */
+  max-width: 50vw; 
 }
 
-/* Section titles (Backend, Frontend, Tools) */
 .pantry-backend-title,
 .pantry-frontend-title,
 .pantry-tool-title {
@@ -103,7 +95,6 @@
   border: 2px solid rgba(0, 255, 255, 0.6);
 }
 
-/* Ensuring the layout stays in a row even on small screens */
 @media (max-width: 768px) {
   .pantry-recording {
     width: 100%;
@@ -131,6 +122,6 @@
   }
 
   .pantry-bottom {
-    flex-wrap: wrap; /* Allows wrapping of content on smaller screens */
+    flex-wrap: wrap; 
   }
 }

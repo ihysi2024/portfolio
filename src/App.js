@@ -9,34 +9,34 @@ import EmployAI from './components/Employai';
 import Pantry from './components/Pantry';
 import GCN from './components/GCN';
 import Contact from './components/Contact';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Corrected imports
-import Resume from './components/Resume'; // Ensure this import is correct
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; 
+import Resume from './components/Resume'; 
 
 
 
 function App() {
   const [tab, setTab] = useState("about");
-  const [showProjectSubtabs, setShowProjectSubtabs] = useState(false); // State to toggle subtabs
-  const [hoverEffect, setHoverEffect] = useState(""); // Track the hovered subtab
-  const [isSubtabActive, setIsSubtabActive] = useState(false); // State to track subtab clicks
+  const [showProjectSubtabs, setShowProjectSubtabs] = useState(false); 
+  const [hoverEffect, setHoverEffect] = useState(""); 
+  const [isSubtabActive, setIsSubtabActive] = useState(false); 
 
   const handleTabClick = (tabName) => {
     setTab(tabName);
     if (tabName === "projects") {
-      setShowProjectSubtabs(!showProjectSubtabs); // Toggle subtabs visibility
+      setShowProjectSubtabs(!showProjectSubtabs);
     } else {
-      setShowProjectSubtabs(false); // Hide subtabs for other tabs
+      setShowProjectSubtabs(false); 
     }
   };
 
   const handleSubtabClick = (subtabName) => {
     console.log("Subtab clicked:", subtabName);
-    setIsSubtabActive(true); // Activate subtab view
+    setIsSubtabActive(true); 
     setTab(subtabName)
   };
 
   const handleSubtabHover = (projectName) => {
-    setHoverEffect(projectName); // Set the hovered project name
+    setHoverEffect(projectName); 
   };
 
 
@@ -44,11 +44,11 @@ function App() {
     <Router>
     <div className="App">
       <header className={`App-header ${isSubtabActive ? "header-collapsed" : ""}`}>
-        <div style={{ flexDirection: "column", marginTop: '5vh',  width: '25vw'}}>
+        <div style={{ flexDirection: "column", marginTop: '5vh',  width: '20vw'}}>
           {!isSubtabActive && 
           <img src={iraImage} className="profile" />
           }
-          {/* Tabs Container */}
+          
           <div style={{ zIndex: 2, marginTop: isSubtabActive ? '-7vh' : '-10.56vh', padding: '1vh', borderRadius: '5px', marginLeft: '-1vw'}}>
             {!isSubtabActive && 
             <div>
@@ -58,7 +58,7 @@ function App() {
             <p className="big-tab" onClick={() => handleTabClick('projects')}>Projects</p>
             
             
-            {/* Subtabs for Projects */}
+            
             {showProjectSubtabs && (
               <div className="subtabs-container">
                 <p
@@ -113,13 +113,12 @@ function App() {
           {isSubtabActive && tab === "projects" && (() => {
               setTab("about");
               setIsSubtabActive(false);
-              return null; // Return something if needed for rendering
+              return null; 
           })()}
 
           </div>
         </div>
 
-        {/* Introduction Text */}
         {!isSubtabActive && 
         <div style={{ flexDirection: 'column'}}>
           <p className="ira">Hi, I'm Ira!</p>
@@ -160,17 +159,15 @@ function App() {
         
       </header>
 
-      {/* Gray Rectangle */}
       <div 
       className="rectangle" 
       style={{
           height: isSubtabActive ? '90vh' : '65vh', 
-          top: isSubtabActive ?  '5vh' : '30vh',// Adjust height based on subtab state
+          top: isSubtabActive ?  '5vh' : '30vh',
           transition: 'height 0.5s ease',
         }}>
       </div>
 
-      {/* Conditionally Render About Component */}
       {tab === "about" && (
         <div className="about-container">
           <About />

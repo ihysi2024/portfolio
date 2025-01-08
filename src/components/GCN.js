@@ -5,9 +5,7 @@ import './GCN.css';
 function GCN() {
     return (
       <div className="gcn-container">
-        {/* Main Content Container */}
         <div className="gcn-content">
-          {/* Images */}
           <div className="gcn-images">
             <img 
               src={gcn} 
@@ -20,8 +18,6 @@ function GCN() {
               className="gcn-recording" 
             />
           </div>
-
-          {/* Text Section */}
           <div className="gcn-text">
             <h1 className="gcn-title">Disease Prediction</h1>
             <div className="gcn-title-separator"></div>

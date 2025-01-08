@@ -1,14 +1,12 @@
 import pantry_video from "../assets/pantry.mov";
-import './Pantry.css'; // Import the CSS file
+import './Pantry.css'; 
 
 function Pantry() {
   return (
     <div className="pantry-n">
-      {/* Title */}
       <h1 className="pantry-title">Pantry Tracker</h1>
       <div className="pantry-title-separator"></div>
 
-      {/* Video */}
       <video 
         className="pantry-recording"
         src={pantry_video}
@@ -18,15 +16,12 @@ function Pantry() {
         controls
       />
 
-      {/* Bottom Content */}
       <div className="pantry-bottom">
-        {/* Left half: Description */}
         <div className="pantry-description">
           This web application allows users to manage their pantry by tracking items through a responsive pie chart. With the help of AI, users are also able to generate
           nutritional data about a given item in the pantry and be mindful of their food intake.
         </div>
 
-        {/* Right half: Tech Stack */}
         <div>
         <div className="pantry-backend-title">Backend</div>
         <div className="pantry-tech-stack">
