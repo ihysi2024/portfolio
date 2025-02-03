@@ -1,100 +1,90 @@
 .projects-container {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: '100%';
+  max-width: '80vw';  
+  max-height: 60vh;
+}
+
+.screenshot-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); /* Responsive grid */
+  gap: 2vw;
+  position: relative;
+}
+
+/* Ensure all images scale proportionally */
+.screenshot {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain; /* Maintain aspect ratio */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Adjust layout dynamically */
+.nightlife {
+  position: relative;
+  max-width: 90%;
+  top: 45%;
+  left: 10%;
+}
+.taskmaster {
+  position: relative;
+  max-width: 90%;
+  bottom: 60%;
+  left: 330%;
+}
+.employai {
+  position: relative;
+  width: 180%;
+  top: 45%;
+  left: 15%;
+}
+.pantry {
+  position: relative;
+  top: 105%;
+  left: -115%;
+  width: 110%;
+}
+.gnn {
+  position: relative;
+  top: 105%;
+  left: -110%;
+}
+
+/* Hover effect */
+.screenshot.lift {
+  box-shadow: 0px 0px 50px rgba(0, 255, 255, 0.6);
+  border-color: rgba(0, 255, 255, 0.6);
+  z-index: 2; /* Lifted effect without breaking layout */
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
   }
-  
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
   .screenshot-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-    gap: 20px;
-    width: 75vw;
-    height: 65vh;
-    position: relative; 
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 2vw;
   }
-  
   .screenshot {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform-origin: center;
-    opacity: 0; 
-    animation: fadeInUp 0.8s ease-out forwards; 
+    max-width: 180px;
   }
-  
-  .nightlife {
-    animation-delay: 0.2s;
-  }
-  .employai {
-    animation-delay: 0.4s;
-  }
-  .pantry {
-    animation-delay: 0.6s;
-  }
-  .gnn {
-    animation-delay: 0.8s;
-  }
-  .taskmaster {
-    animation-delay: 1s;
-  }
-  
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      
-    }
-    100% {
-      opacity: 1;
-      
-    }
-  }
-  
-  .screenshot.lift {
-    box-shadow: 0px 0px 50px rgba(0, 255, 255, 0.6); 
-    border-color: rgba(0, 255, 255, 0.6); 
-    z-index: 1; 
-  }
-  
-  .nightlife {
-    width: 29vh;
-    position: relative;
-    left: 10%;
-    top: 5%;
-  }
-  
-  .taskmaster {
-    width: 28vh;
-    left: -26%;
-    top: 12%;
-    position: relative;
-  }
-  
-  .employai {
-    width: 66vh;
-    left: 25%;
-    top: 5%;
-    position: relative;
-  }
-  
-  .pantry {
-    width:32vh;
-    height:21vh;
-    left: -83%;
-    top: 63%;
-    padding-left: 1%;
-    position: relative;
-  }
-  
-  .gnn {
-    width: 32vh;
-    height:21vh;
-    left: -54%;
-    top: 63%;
-    position: relative;
-  }
-  
+}

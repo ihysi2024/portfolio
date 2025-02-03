@@ -111,7 +111,7 @@ function App() {
                                 </button>
                               )}
           {isSubtabActive && tab === "projects" && (() => {
-              setTab("about");
+              setTab("projects");
               setIsSubtabActive(false);
               return null; 
           })()}
