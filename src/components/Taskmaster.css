@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 100vw;
-  margin: 0 auto;
+  max-width: 75vw;
+  height:90vh;
   padding: 2rem;
 
 }
@@ -18,9 +18,7 @@
 .taskmaster-content {
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap; 
-  width: 60vw;
-  height: 90vh;
+  width: 70vw;
   gap: 5vw;
 }
 
@@ -29,7 +27,8 @@
   border-radius: 10px;
   max-width:20vw;
   border: 10px solid #283353;
-  top: 5vw;
+  top: 5vh;
+  left: 1vw;
   position: relative;
 }
 
@@ -49,12 +48,6 @@
   text-align: left;
 }
 
-.taskmaster-title-separator {
-  width: 100%;
-  max-width: 70vw;
-  background-color: #ffffff;
-  margin-top: -2vh;
-}
 
 .taskmaster-desc {
   font-size: 1.4rem;
@@ -62,7 +55,7 @@
   font-weight: 300;
   color: #ffffff;
   text-align: left;
-  max-width: 70vw;
+  max-width: 100%;
 }
 
 .taskmaster-backend-title,
@@ -72,14 +65,14 @@
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
   color: rgba(0, 255, 255, 0.6);
-  margin-top: 1vh;
+  margin-top: 1rem;
   text-align: left;
 }
 
 .taskmaster-tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   margin-top: -3vh;
 }
 
